@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Permanent+Marker&display=swap");
+
+@font-face {
+  font-family: rooney;
+  src: url(../font/rooney/RooneyPro-Heavy.ttf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(../font/gilroy/Gilroy-Regular.ttf);
+  }
+  .lh-head-bbt{
+    line-height: 45px;
+  }
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 380px;
+    margin: 0 20px;
+  }
+.tt-button{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 38, 34, 1);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    cursor: pointer;
+}
+@media(max-width:873px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 350px;
+    margin: 0 20px;
+  }
+}
+@media(max-width:811px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 320px;
+    margin: 0 20px;
+  }
+}
+@media(max-width:750px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 290px;
+    margin: 0 20px;
+  }
+}
+@media(max-width:686px){
+  .tt-img-div{
+    margin-top: -30px;
+  }
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 260px;
+    margin: 0 20px;
+  }
+}
+@media(max-width:632px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 230px;
+    margin: 0 20px;
+  }
+}
+@media(max-width:574px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 200px;
+    margin: 0 20px;
+  }
+}
+@media(max-width:521px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 170px;
+    margin: 0 10px;
+  }
+}
+@media(max-width:433px){
+  .tt-tt-img-2, .tt-tt-img-3{
+    height: 150px;
+    margin: 0 10px;
+  }
+}

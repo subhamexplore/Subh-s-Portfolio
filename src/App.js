@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'
+import Home from './pages/Home';
+import Project from './pages/Project';
+import AboutUs from './pages/AboutUs';
+import {Routes, Route} from 'react-router-dom'
+import BigBoyToyz from './components/BigBoyToyz';
+import Ayushtha from './components/Ayushtha';
+import TastyTreat from './components/TastyTreat';
+import SheafIcons from './components/SheafIcons';
+import PackagingWorkshop from './components/PackagingWorkshop'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/project' element={<Project/>}/>
+      <Route path='/about' element={<AboutUs/>}/>
+      <Route path='/bigBoyToyz' element={<BigBoyToyz/>}/>
+      <Route path='/ayushtha' element={<Ayushtha/>}/>
+      <Route path='/tastyTreat' element={<TastyTreat/>}/>
+      <Route path='/sheafIcons' element={<SheafIcons/>}/>
+      <Route path='/packagingWorkshop' element={<PackagingWorkshop/>}/>
+    </Routes>
     </div>
   );
 }

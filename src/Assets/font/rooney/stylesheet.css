@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-BoldItalic.eot');
+    src: local('Rooney Pro Bold Italic'), local('RooneyPro-BoldItalic'),
+        url('RooneyPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-BoldItalic.woff2') format('woff2'),
+        url('RooneyPro-BoldItalic.woff') format('woff'),
+        url('RooneyPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-Light.eot');
+    src: local('Rooney Pro Light'), local('RooneyPro-Light'),
+        url('RooneyPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-Light.woff2') format('woff2'),
+        url('RooneyPro-Light.woff') format('woff'),
+        url('RooneyPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-Bold.eot');
+    src: local('Rooney Pro Bold'), local('RooneyPro-Bold'),
+        url('RooneyPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-Bold.woff2') format('woff2'),
+        url('RooneyPro-Bold.woff') format('woff'),
+        url('RooneyPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-Black.eot');
+    src: local('Rooney Pro Black'), local('RooneyPro-Black'),
+        url('RooneyPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-Black.woff2') format('woff2'),
+        url('RooneyPro-Black.woff') format('woff'),
+        url('RooneyPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-MediumItalic.eot');
+    src: local('Rooney Pro Medium Italic'), local('RooneyPro-MediumItalic'),
+        url('RooneyPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-MediumItalic.woff2') format('woff2'),
+        url('RooneyPro-MediumItalic.woff') format('woff'),
+        url('RooneyPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-BlackItalic.eot');
+    src: local('Rooney Pro Black Italic'), local('RooneyPro-BlackItalic'),
+        url('RooneyPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-BlackItalic.woff2') format('woff2'),
+        url('RooneyPro-BlackItalic.woff') format('woff'),
+        url('RooneyPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-HeavyItalic.eot');
+    src: local('Rooney Pro Heavy Italic'), local('RooneyPro-HeavyItalic'),
+        url('RooneyPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-HeavyItalic.woff2') format('woff2'),
+        url('RooneyPro-HeavyItalic.woff') format('woff'),
+        url('RooneyPro-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-Heavy.eot');
+    src: local('Rooney Pro Heavy'), local('RooneyPro-Heavy'),
+        url('RooneyPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-Heavy.woff2') format('woff2'),
+        url('RooneyPro-Heavy.woff') format('woff'),
+        url('RooneyPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-LightItalic.eot');
+    src: local('Rooney Pro Light Italic'), local('RooneyPro-LightItalic'),
+        url('RooneyPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-LightItalic.woff2') format('woff2'),
+        url('RooneyPro-LightItalic.woff') format('woff'),
+        url('RooneyPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-Medium.eot');
+    src: local('Rooney Pro Medium'), local('RooneyPro-Medium'),
+        url('RooneyPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-Medium.woff2') format('woff2'),
+        url('RooneyPro-Medium.woff') format('woff'),
+        url('RooneyPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-Regular.eot');
+    src: local('Rooney Pro Regular'), local('RooneyPro-Regular'),
+        url('RooneyPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-Regular.woff2') format('woff2'),
+        url('RooneyPro-Regular.woff') format('woff'),
+        url('RooneyPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rooney Pro';
+    src: url('RooneyPro-RegularItalic.eot');
+    src: local('Rooney Pro Regular Italic'), local('RooneyPro-RegularItalic'),
+        url('RooneyPro-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('RooneyPro-RegularItalic.woff2') format('woff2'),
+        url('RooneyPro-RegularItalic.woff') format('woff'),
+        url('RooneyPro-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

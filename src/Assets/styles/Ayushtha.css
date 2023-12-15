@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Permanent+Marker&display=swap");
+
+@font-face {
+  font-family: rooney;
+  src: url(../font/rooney/RooneyPro-Heavy.ttf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(../font/gilroy/Gilroy-Regular.ttf);
+}
+
+.proj-part-img1{
+    height: 400px;
+    width: 1000px;
+}
+.obj-ayu{
+    width: 900px;
+    margin: auto;
+}
+.obj-head{
+    font-family: gilroy;
+    font-weight: 600;
+}
+.ol{
+    color: rgba(91, 91, 91, 1);
+    font-family: gilroy;
+}
+.slant{
+    font-family:"Permanent Marker", cursive;;
+}
+.violet{
+    color: rgba(79, 33, 224, 1);
+    font-weight: 600;
+}
+.proj-part-img-2{
+    height: 400px;
+}
+.proj-part-img-3{
+    height: 280px;  
+}
+@media(max-width:1025px){
+    .proj-part-img1{
+        height: 350px;
+        width: 800px;
+    }
+    .proj-part-img-2{
+        height: 350px;
+    }
+    .proj-part-img-3{
+        height: 250px;
+    }
+    .project-brief{
+        width: auto;
+        margin: 0 40px;
+    }
+    .obj-ayu{
+        width: auto;
+        margin: 0 40px;
+    }
+    .bbt-second{
+        width: auto;
+        margin: 0 40px;
+    }
+    .card-sorting{
+        width: auto;
+        margin: 0 40px;
+    }
+}
+@media(max-width:838px){
+    .proj-part-img-2{
+        height: 300px;
+    }
+    .proj-part-img-3{
+        height: 200px;
+    }
+}
+@media(max-width:815px){
+    .proj-part-img1{
+        height: 300px;
+        width: 600px;
+    }
+}
+@media(max-width:725px){
+    .proj-part-img-2{
+        height: 200px;
+    }
+}
+@media(max-width:675px){
+    .proj-part-img-3{
+        height: 150px;
+    }
+}
+@media(max-width:625px){
+    .proj-part-img1{
+        height: 250px;
+        width: 500px;
+    }
+}
+@media(max-width:525px){
+    .proj-part-img1{
+        height: 200px;
+        width: 400px;
+    }
+    .proj-part-img-3{
+        height: 140px;
+    }
+}
+@media(max-width:490px){
+    .proj-part-img-2{
+        height: 150px;
+    }
+    .proj-part-img-3{
+        height: 120px;
+    }
+}
+@media(max-width:416px){
+    .proj-part-img1{
+        height: 190px;
+        width: 370px;
+    }
+    .proj-part-img-3{
+        height: 110px;
+    }
+}
+@media(max-width:401px){
+    .th-sm-img{
+        margin-left: -2px;
+    }
+}
+@media(max-width:399px){
+    .th-sm-img{
+        margin-left: -3px;
+    }
+}
+@media(max-width:398px){
+    .th-sm-img{
+        margin-left: -4px;
+    }
+}
+@media(max-width:397px){
+    .th-sm-img{
+        margin-left: -6px;
+    }
+}

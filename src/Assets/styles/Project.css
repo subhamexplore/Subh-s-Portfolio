@@ -1,0 +1,36 @@
+.workbook-img-div{
+    display: flex;
+    justify-content: center;
+}
+.workbook-img{
+    height: 270px;
+}
+
+@media(max-width:1447px){
+    .card-work-bbt-card{
+        height: auto;
+    }
+}
+
+@media(max-width: 562px){
+    .workbook-img{
+        height: 250px;
+    }
+}
+
+@media(max-width: 518px){
+    .workbook-img{
+        height: 230px;
+    }
+}
+@media(max-width: 473px){
+    .workbook-img{
+        height: 210px;
+    }
+}
+@media(max-width: 424px){
+    .workbook-img{
+        height: 180px;
+        padding-left: 15px;
+    }
+}

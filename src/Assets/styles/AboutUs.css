@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Permanent+Marker&display=swap");
+
+@font-face {
+  font-family: rooney;
+  src: url(../font/rooney/RooneyPro-Heavy.ttf);
+}
+@font-face {
+  font-family: gilroy;
+  src: url(../font/gilroy/Gilroy-Regular.ttf);
+}
+.vector-back{
+    background-image: url('../images/Vector\ 38.png');
+    background-repeat: no-repeat;
+}
+.about-head-div{
+  display: flex;
+  justify-content: center;
+}
+.about-heading {
+  margin-top: 20px;
+  text-align: center;
+  font-family: rooney;
+  font-size: 60px;
+  color: rgba(13, 5, 41, 1);
+  width: 500px;
+  height: 200px;
+  line-height: 70px;
+}
+.about-top-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+.about-top-img-img{
+  height: 450px;
+}
+.top-about-para {
+  font-family: gilroy;
+  text-align: center;
+  width: 700px;
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgba(13, 5, 41, 1);
+  font-weight: 600;
+}
+.childhood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.childhood-sub1 {
+  margin: 0 50px;
+  height:400px;
+}
+.childhood-sub2 {
+  margin: 0 50px;
+}
+.childhood-head1 {
+  font-family: rooney;
+  font-size: 40px;
+}
+.childhood-head2 {
+  font-family: rooney;
+  font-size: 40px;
+  margin-top: -20px;
+}
+.childhood-head3 {
+  font-family: rooney;
+  font-size: 40px;
+  margin-top: -20px;
+}
+.childhood-para {
+  font-family: gilroy;
+  font-size: 20px;
+  width: 400px;
+}
+.about-foot {
+  height: 230px;
+  width: 1000px;
+  background-color: rgba(168, 157, 252, 0.1);
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-foot-text1 {
+  font-family: gilroy;
+  font-size: 23px;
+  width: 652px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.about-foot-text2 {
+  font-family: gilroy;
+  font-size: 23px;
+  color: rgba(127, 88, 251, 1);
+  font-weight: 600;
+  text-align: center;
+}
+@media(max-width:1000px){
+  .about-foot{
+    width: 750px;
+  }
+}
+@media(max-width:868px) {
+  .childhood-sub1{
+    height: 350px;
+  }
+}
+@media(max-width:838px) {
+  .childhood-sub1{
+    height: 300px;
+  }
+}
+@media(max-width:800px){
+  .childhood{
+    flex-direction: column;
+    text-align: center;
+  }
+  .childhood-sub1{
+    margin-bottom: 20px;
+    height: 370px;
+  }
+}
+@media(max-width: 753px){
+  .top-about-para{
+    width: 650px;
+  }
+}
+@media(max-width:750px){
+  .about-foot{
+    width: 600px;
+  }
+}
+@media(max-width:672px) {
+  .about-top-img-img{
+    height: 400px;
+  }
+  .top-about-para{
+    width: 450px;
+  }
+}
+@media(max-width:666px){
+ .about-foot{
+  width: 520px;
+ }
+ .about-foot-text1{
+  width: 450px;
+  font-size: 20px;
+ } 
+}
+@media(max-width:566px) {
+  .about-top-img-img{
+    height: 350px;
+  }
+}
+@media(max-width:520px){
+  .about-foot{
+   width: 400px;
+  }
+  .about-foot-text1{
+   width: 350px;
+   font-size: 18px;
+  } 
+  .about-foot-text2{
+    font-size: 18px;
+  }
+ }
+@media(max-width:470px) {
+  .childhood-sub2{
+    width: 360px;
+  }
+  .childhood-para{
+    width: 300px;
+    text-align: center;
+  }
+}
+@media(max-width:464px) {
+  .about-top-img-img{
+    height: 320px;
+  }
+  .top-about-para{
+    width: 350px;
+    font-size: 18px;
+  }
+}
+@media(max-width:411px) {
+  .about-top-img{
+    margin-top: 30px;
+  }
+  .about-top-img-img{
+    height: 280px;
+  }
+}
+@media(max-width:400px){
+  .about-foot{
+   width: 350px;
+  }
+  .about-foot-text1{
+   width: 330px;
+   font-size: 18px;
+  } 
+ }

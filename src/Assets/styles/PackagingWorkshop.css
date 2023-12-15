@@ -1,0 +1,51 @@
+.PackagingWorkshopImg{
+    background-image: url('../images/pw.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 1000px;
+    background-position: center;
+    border-radius: 20px;
+}
+@media(max-width:1030px){
+    .PackagingWorkshopImg{
+        height: 400px;
+        width: 900px;
+    }
+}
+@media(max-width:935px){
+    .PackagingWorkshopImg{
+        height: 400px;
+        width: 800px;
+    }
+}
+@media(max-width:833px){
+    .PackagingWorkshopImg{
+        height: 400px;
+        width: 700px;
+    }
+}
+@media(max-width:735px){
+    .PackagingWorkshopImg{
+        height: 300px;
+        width: 600px;
+    }
+}
+@media(max-width:620px){
+    .PackagingWorkshopImg{
+        height: 300px;
+        width: 500px;
+    }
+}
+@media(max-width:530px){
+    .PackagingWorkshopImg{
+        height: 250px;
+        width: 400px;
+    }
+}
+@media(max-width:430px){
+    .PackagingWorkshopImg{
+        height: 250px;
+        width: 350px;
+    }
+}

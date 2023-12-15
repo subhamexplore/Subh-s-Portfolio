@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Permanent+Marker&display=swap");
+
+@font-face {
+  font-family: rooney;
+  src: url(../font/rooney/RooneyPro-Heavy.ttf);
+}
+@font-face {
+  font-family: gilroy;
+  src: url(../font/gilroy/Gilroy-Regular.ttf);
+}
+.Home-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.img-card-left {
+  background-color: transparent;
+}
+.img-card-right {
+  background-color: transparent;
+}
+.img-left {
+  height: 270px;
+}
+.img-right {
+  height: 400px;
+}
+
+.img-right {
+  color: #eee;
+  padding-top: 30px;
+  font-family: "Coiny", cursive;
+  text-align: center;
+  font-size: 70px;
+  animation: bounce 1s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);
+  }
+  100% {
+    transform: translateY(-20px);
+    text-shadow: 0 50px 0, 0 0px 20px rgba(0, 0, 0, 0.8);
+  }
+}
+.works {
+  background-color: rgba(8, 0, 37, 1);
+  /* height: 100vh; */
+}
+.my-work {
+  color: rgba(248, 219, 70, 1);
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+}
+.heading-work {
+  color: rgba(222, 222, 222, 1);
+  font-family: rooney;
+  font-size: 60px;
+}
+.card-work {
+  margin: auto;
+  height: 420px;
+  width: 74%;
+  background-color: rgba(248, 219, 70, 1);
+  border-radius: 30px;
+  background-image: url("../images/Frame\ 70.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-work {
+  display: flex;
+  padding: 55px;
+}
+.ui-ux {
+  font-family: "Permanent Marker", cursive;
+  font-weight: lighter;
+}
+.name-text-part {
+  font-family: rooney;
+  font-size: 48px;
+  font-weight: 900;
+}
+.para-text-part {
+  font-family: gilroy;
+}
+.span-text {
+  font-family: rooney;
+  font-weight: 900;
+  display: flex;
+}
+.dot {
+  margin: 0 12px;
+  margin-top: 8px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.448);
+}
+.check-detail {
+  background-color: rgba(45, 38, 34, 1);
+  color: white;
+  font-family: gilroy;
+  height: 43px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 130px;
+  margin-top: 20px;
+}
+.next-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card2,
+.card3 {
+  height: 380px;
+  width: 555px;
+  border-radius: 40px;
+  margin: 30px 10px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.card2 {
+  background-color: rgba(153, 141, 248, 1);
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.imgPartSsmall2 {
+  height: 150px;
+  margin-top: 210px;
+  margin-right: -30px;
+}
+.card3 {
+  background-color: rgba(249, 249, 249, 1);
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.imgPartSsmall3 {
+  height: 150px;
+  margin-top: 210px;
+  margin-right: -30px;
+}
+.check-detail2 {
+  background-color: rgba(45, 38, 34, 1);
+  color: white;
+  font-family: gilroy;
+  height: 43px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 130px;
+  margin-top: 20px;
+}
+
+.check-detail3 {
+  background-color: rgba(45, 38, 34, 1);
+  color: white;
+  font-family: gilroy;
+  height: 43px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 130px;
+  margin-top: 20px;
+}
+.ui-ux2 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: lighter;
+}
+.name-text-part2 {
+  font-family: rooney;
+  font-size: 48px;
+  font-weight: 900;
+}
+.para-text-part2 {
+  font-family: gilroy;
+}
+.span-text2 {
+  font-family: rooney;
+  font-weight: 900;
+  display: flex;
+}
+.dot2 {
+  margin: 0 12px;
+  margin-top: 8px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.448);
+}
+
+.ui-ux3 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: lighter;
+}
+.name-text-part3 {
+  font-family: rooney;
+  font-size: 48px;
+  font-weight: 900;
+}
+.para-text-part3 {
+  font-family: gilroy;
+}
+.span-text3 {
+  font-family: rooney;
+  font-weight: 900;
+  display: flex;
+}
+.dot3 {
+  margin: 0 12px;
+  margin-top: 8px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.448);
+}
+.exploreAll {
+  background-color: rgba(248, 219, 70, 1);
+  color: black;
+  font-family: "Permanent Marker", cursive;
+  height: 43px;
+  border: none;
+  font-size: 14px;
+  border-radius: 25px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.exploration {
+  background-color: rgba(24, 14, 57, 1);
+}
+.make-sense {
+  background-color: rgba(8, 0, 37, 1);
+}
+.above-links {
+  background-color: rgba(24, 14, 57, 1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.above-links-sub {
+  padding-left: 100px;
+}
+.lhighl {
+  height: 400px;
+}
+.lhighl1 {
+  display: none;
+  height: 400px;
+}
+.footer {
+  background-color: white;
+  height: 15vh;
+}
+.links {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: gilroy;
+  font-weight: 900;
+}
+.dot-foot {
+  height: 3px;
+  width: 3px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: -12px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.ht {
+  text-decoration: none;
+  color: black;
+  margin-top: -14px;
+}
+.nothing {
+  background-color: rgba(8, 0, 37, 1);
+  height: 5vh;
+}
+
+.wave-img-text {
+  height: 53vw;
+  width: 100%;
+}
+.work-in {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+.card-carousal {
+  flex-wrap: wrap;
+}
+.subhs-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.port1 {
+  height: 400px;
+}
+.port2 {
+  height: 320px;
+}
+.port3 {
+  height: 320px;
+}
+.toggle-img {
+  display: none;
+}
+.subhs-img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.port11 {
+  text-align: center;
+}
+.subhs-img-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1235px) {
+  .card-work {
+    height: 420px;
+    width: 74%;
+  }
+  .card2,
+  .card3 {
+    width: 500px;
+  }
+}
+@media (max-width: 1195px) {
+  .port1 {
+    height: 360px;
+  }
+  .port2 {
+    height: 280px;
+  }
+  .port3 {
+    height: 280px;
+  }
+}
+/* @media(max-width: 1225px) {
+
+} */
+@media (max-width: 1080px) {
+  .port1 {
+    height: 340px;
+  }
+  .port2 {
+    height: 260px;
+  }
+  .port3 {
+    height: 260px;
+  }
+}
+@media (max-width: 1083px) {
+  .img-left {
+    height: 250px;
+  }
+  .img-right {
+    height: 380px;
+  }
+  .card2,
+  .card3 {
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .name-text-part2,
+  .name-text-part3 {
+    font-size: 40px;
+  }
+  .para-text-part2,
+  .para-text-part3 {
+    font-size: 15px !important;
+  }
+  .span-text2,
+  .span-text3 {
+    font-size: 15px;
+  }
+  .imgPartSsmall2,
+  .imgPartSsmall3 {
+    display: none;
+  }
+  .text-part-2,
+  .text-part-3 {
+    width: 350px;
+  }
+}
+@media (max-width: 981px) {
+  .img-left {
+    height: 220px;
+  }
+  .img-right {
+    height: 350px;
+  }
+  .card2,
+  .card3 {
+    width: 420px;
+  }
+  .text-part-2,
+  .text-part-3 {
+    width: 300px;
+  }
+  .toggle-img {
+    display: block;
+  }
+  .subhs-img-bottom {
+    margin-top: -10px;
+  }
+  .port11 {
+    height: 400px;
+  }
+  .port22 {
+    height: 314px;
+  }
+  .port33 {
+    height: 320px;
+    margin-top: 8px;
+  }
+  .subhs-img {
+    display: none;
+  }
+}
+@media (max-width: 957px) {
+  .lhighl {
+    margin-top: 100px;
+    height: 350px;
+  }
+}
+@media (max-width: 920px) {
+  .card2,
+  .card3 {
+    width: 380px;
+  }
+  .text-part-2,
+  .text-part-3 {
+    width: 300px;
+  }
+}
+@media (max-width: 904px) {
+  .img-left {
+    height: 200px;
+  }
+  .img-right {
+    height: 320px;
+  }
+}
+@media (max-width: 895px) {
+  .above-links {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .above-links-sub {
+    padding-left: 0;
+  }
+  .lhighl {
+    display: none;
+  }
+  .lhighl1 {
+    display: block;
+    height: 400px;
+    margin: 50px 0;
+  }
+}
+@media (max-width: 823px) {
+  .next-cards {
+    flex-direction: column;
+  }
+  .work-in {
+    margin-left: 0;
+  }
+  .heading-work {
+    text-align: center;
+  }
+  .my-work {
+    text-align: center;
+  }
+}
+@media (max-width: 811px) {
+  .img-left {
+    height: 180px;
+  }
+  .img-right {
+    height: 300px;
+  }
+}
+@media (max-width: 736px) {
+  .Home-top {
+    flex-direction: column;
+    padding-top: 130px;
+    height: 130vh;
+  }
+  .img-left {
+    height: 180px;
+  }
+  .img-right {
+    height: 350px;
+  }
+}
+@media (max-width: 704px) {
+  .port22 {
+    height: 195px;
+  }
+  .port33 {
+    height: 200px;
+  }
+}
+@media (max-width: 510px) {
+  .phone1,
+  .phone2 {
+    display: none;
+  }
+  .card-work {
+    padding: 50px;
+    height: 410px;
+  }
+  .name-text-part {
+    font-size: 40px;
+  }
+  .para-text-part {
+    font-size: 17px;
+  }
+  .card2,
+  .card3 {
+    justify-content: center;
+    align-items: center;
+  }
+  .card2,
+  .card3 {
+    width: 370px;
+    border-radius: 40px;
+    margin: 30px 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .imgPartSsmall2,
+  .imgPartSsmall3 {
+    display: none;
+  }
+
+  .heading-work {
+    font-size: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .card-work {
+    width: 380px;
+  }
+}
+@media (max-width: 481px) {
+  .footer {
+    height: auto;
+  }
+  .dot-foot {
+    display: none;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .foots-foot {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .gara {
+    display: none;
+  }
+  .ht {
+    padding-top: 13px;
+  }
+}
+@media (max-width: 463px) {
+  .port11 {
+    height: 330px;
+  }
+  .port22 {
+    height: 172px;
+    margin-top: 5px;
+  }
+  .port33 {
+    height: 175px;
+  }
+}
+@media (max-width: 442px) {
+  .card-work {
+    padding: 40px;
+  }
+  .lhighl1 {
+    height: 320px;
+  }
+}
