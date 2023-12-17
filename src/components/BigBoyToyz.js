@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import "../Assets/styles/BigBoyToyz.css";
 import BigBoyCar from "../Assets/images/Frame 162877.png";
 import flowchart from "../Assets/images/Frame 162890.png";
@@ -11,8 +11,14 @@ import rut from '../Assets/images/Group 28867.png'
 import tra from '../Assets/images/Home Page.png'
 
 const BigBoyToyz = () => {
+  const bbtRef = useRef(null);
+
+  // Use effect to scroll to the top when the component mounts
+  useEffect(() => {
+    bbtRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, []);
   return (
-    <div style={{ paddingTop: "100px" }}>
+    <div style={{ paddingTop: "100px" }} ref={bbtRef} id='bbt-page'>
       <div>
         <div className="bbt-head-pro">
         <p className="small-head-bbt">Big Boy Toyz</p>
@@ -324,7 +330,7 @@ const BigBoyToyz = () => {
           <div className="dot-foot"></div>
           <a
             className="ht"
-            href="#home-top"
+            href="#bbt-page"
           >
             Back to top
           </a>

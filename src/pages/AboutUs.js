@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import "../Assets/styles/AboutUs.css";
 import aboutTopImg from "../Assets/images/Group 28864.png";
 import about2img from "../Assets/images/Rectangle 157.png";
@@ -8,8 +8,15 @@ import about5img from "../Assets/images/Rectangle 157.png";
 import vector from "../Assets/images/Vector 38.png";
 
 const AboutUs = () => {
+  const aboutRef = useRef(null);
+
+  // Use effect to scroll to the top when the component mounts
+  useEffect(() => {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, []);
+
   return (
-    <div style={{ paddingTop: "90px" }}>
+    <div style={{ paddingTop: "90px" }} ref={aboutRef}>
       <div>
         <div className="vector-back">
           <div className="about-head-div" style={{marginTop:'50px'}}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import "../Assets/styles/Ayushtha.css";
 import Ayushthaimg1 from "../Assets/images/Frame 162877 (1).png";
 import Ayushthaimg2 from "../Assets/images/Frame 162882.png";
@@ -10,8 +10,14 @@ import Ayushthaimg7 from "../Assets/images/Frame 162859.png";
 import Ayushthaimg8 from "../Assets/images/Frame 162996.png";
 
 const Ayushtha = () => {
+  const ayushthaRef = useRef(null);
+
+  // Use effect to scroll to the top when the component mounts
+  useEffect(() => {
+    ayushthaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, []);
   return (
-    <div style={{ paddingTop: "100px" }}>
+    <div style={{ paddingTop: "100px" }} ref={ayushthaRef} id='ayushtha-page'>
       <div>
         <p className="small-head-bbt">Ayustha</p>
         <p className="head-bbt">A guide to healthy lifestyle</p>
@@ -489,7 +495,7 @@ const Ayushtha = () => {
           <div className="dot-foot"></div>
           <a
             className="ht"
-            href="#home-top"
+            href="#ayushtha-page"
           >
             Back to top
           </a>

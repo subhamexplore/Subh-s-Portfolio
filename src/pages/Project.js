@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import "../Assets/styles/Project.css";
 import workbook from "../Assets/images/Group 28859.png";
 import phone1 from "../Assets/images/Tip of the day.png";
@@ -11,8 +11,14 @@ import card4 from "../Assets/images/Group 28862.png";
 import {Link} from 'react-router-dom';
 
 const Project = () => {
+  const projectRef = useRef(null);
+
+  // Use effect to scroll to the top when the component mounts
+  useEffect(() => {
+    projectRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, []);
   return (
-    <div style={{ paddingTop: "90px" }}>
+    <div style={{ paddingTop: "90px" }} ref={projectRef}>
       <div className="workbook-img-div">
         <img className="workbook-img" src={workbook} alt="" />
       </div>

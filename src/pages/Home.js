@@ -1,8 +1,7 @@
-import React from "react";
-import "../Assets/styles/Home.css";
+import React, { useEffect, useRef } from "react";
+import "../Assets/styles/Home.scss";
 import Bounce from "../Assets/images/bounce.png";
 import LeftImg from "../Assets/images/landing_image.png";
-import img from "../Assets/images/Frame 65.png";
 import phone1 from "../Assets/images/Tip of the day.png";
 import phone2 from "../Assets/images/Explore.png";
 import card2 from "../Assets/images/card2.png";
@@ -17,25 +16,190 @@ import port2 from "../Assets/images/Rectangle 19.png";
 import port3 from "../Assets/images/Rectangle 20.png";
 import calm from "../Assets/images/image 338.png";
 import last from "../Assets/images/last.png";
-import last1 from '../Assets/images/last1.png'
-import { Link, useNavigate } from "react-router-dom";
+import last1 from "../Assets/images/last1.png";
+import star from "../Assets/images/Star.png";
+import silent from "../Assets/images/silent.png";
+import wave from "../Assets/images/wave.png";
+import { Link } from "react-router-dom";
+import $ from "jquery";
+import { gsap } from "gsap";
+import bnl from "../Assets/images/bbl.gif";
 
 const Home = () => {
-  const nav = useNavigate();
+  useEffect(() => {
+    $(".butto--bubble").each(function () {
+      var $circlesTopLeft = $(this).parent().find(".circle.top-left");
+      var $circlesBottomRight = $(this).parent().find(".circle.bottom-right");
+
+      var tl = gsap.timeline();
+      var tl2 = gsap.timeline();
+
+      var btTl = gsap.timeline({ paused: true });
+
+      tl.to($circlesTopLeft, 1.2, {
+        x: -25,
+        y: -25,
+        scaleY: 2,
+        ease: "power0.inOut",
+      });
+      tl.to($circlesTopLeft.eq(0), 0.1, { scale: 0.2, x: "+=6", y: "-=2" });
+      tl.to(
+        $circlesTopLeft.eq(1),
+        0.1,
+        { scaleX: 1, scaleY: 0.8, x: "-=10", y: "-=7" },
+        "-=0.1"
+      );
+      tl.to(
+        $circlesTopLeft.eq(2),
+        0.1,
+        { scale: 0.2, x: "-=15", y: "+=6" },
+        "-=0.1"
+      );
+      tl.to($circlesTopLeft.eq(0), 1, {
+        scale: 0,
+        x: "-=5",
+        y: "-=15",
+        opacity: 0,
+      });
+      tl.to(
+        $circlesTopLeft.eq(1),
+        1,
+        { scaleX: 0.4, scaleY: 0.4, x: "-=10", y: "-=10", opacity: 0 },
+        "-=1"
+      );
+      tl.to(
+        $circlesTopLeft.eq(2),
+        1,
+        { scale: 0, x: "-=15", y: "+=5", opacity: 0 },
+        "-=1"
+      );
+
+      var tlBt1 = gsap.timeline();
+      var tlBt2 = gsap.timeline();
+
+      tlBt1.set($circlesTopLeft, { x: 0, y: 0, rotation: -45 });
+      tlBt1.add(tl);
+
+      tl2.set($circlesBottomRight, { x: 0, y: 0 });
+      tl2.to($circlesBottomRight, 1.1, { x: 30, y: 30, ease: "power0.inOut" });
+      tl2.to($circlesBottomRight.eq(0), 0.1, {
+        scale: 0.2,
+        x: "-=6",
+        y: "+=3",
+      });
+      tl2.to(
+        $circlesBottomRight.eq(1),
+        0.1,
+        { scale: 0.8, x: "+=7", y: "+=3" },
+        "-=0.1"
+      );
+      tl2.to(
+        $circlesBottomRight.eq(2),
+        0.1,
+        { scale: 0.2, x: "+=15", y: "-=6" },
+        "-=0.2"
+      );
+      tl2.to($circlesBottomRight.eq(0), 1, {
+        scale: 0,
+        x: "+=5",
+        y: "+=15",
+        opacity: 0,
+      });
+      tl2.to(
+        $circlesBottomRight.eq(1),
+        1,
+        { scale: 0.4, x: "+=7", y: "+=7", opacity: 0 },
+        "-=1"
+      );
+      tl2.to(
+        $circlesBottomRight.eq(2),
+        1,
+        { scale: 0, x: "+=15", y: "-=5", opacity: 0 },
+        "-=1"
+      );
+
+      tlBt2.set($circlesBottomRight, { x: 0, y: 0, rotation: 45 });
+      tlBt2.add(tl2);
+
+      btTl.add(tlBt1);
+      btTl.to(
+        $(this).parent().find(".butto.effect-butto"),
+        0.8,
+        { scaleY: 1.1 },
+        0.1
+      );
+      btTl.add(tlBt2, 0.2);
+      btTl.to(
+        $(this).parent().find(".butto.effect-butto"),
+        1.8,
+        { scale: 1, ease: "elastic.out(1.2, 0.4)" },
+        1.2
+      );
+
+      btTl.timeScale(2.6);
+
+      $(this).on("mouseover", function () {
+        btTl.restart();
+      });
+    });
+  }, []);
+  const homeRef = useRef(null);
+
+  // Use effect to scroll to the top when the component mounts
+  useEffect(() => {
+    homeRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
   return (
     <>
-      <section id="home-top" style={{ backgroundColor: "rgba(8, 0, 37, 1)" }}>
+      <section
+        id="home-top"
+        className="homii"
+        // style={{}}
+        ref={homeRef}
+      >
         <div className="Home-top">
           <div className="card img-card-left">
             <img src={LeftImg} className="card-img-top img-left" alt="..." />
           </div>
           <div className="card img-card-right my-animation">
             <img src={Bounce} className="card-img-top img-right" alt="..." />
+            {/* <iframe
+              src="https://my.spline.design/untitledcopy-aefe3995c822c4d247b596f180828125/"
+              frameborder="0"
+              width="500px"
+              height="450px"
+              // style={{ border: "1px solid red" }}
+            ></iframe> */}
           </div>
         </div>
       </section>
-      <div>
-        <img src={img} alt="" className="wave-img-text" />
+      <div className="wid-section">
+        <div className="what-i-do">
+          <p className="my-work">What I do</p>
+          <h3
+            className="heading-work-wid"
+            style={{ color: "rgba(8, 0, 36, 1)" }}
+          >
+            <span>
+              <span>
+                <img
+                  style={{ marginTop: "-37px", marginRight: "-40px" }}
+                  src={star}
+                  height={50}
+                  alt=""
+                />
+              </span>{" "}
+              Crafting{" "}
+            </span>
+            <span style={{ color: "rgba(153, 141, 248, 1)" }}>products</span>{" "}
+            surfing user's silent{" "}
+            <span>
+              <img src={silent} height={40} alt="" />
+            </span>{" "}
+            waves <img src={wave} height={40} alt="" />
+          </h3>
+        </div>
+        <div className="body-wave"></div>
       </div>
 
       <div className="works">
@@ -141,15 +305,51 @@ const Home = () => {
             <img src={card3} alt="" className="imgPartSsmall3" />
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Link to={'/project'}><button className="exploreAll">EXPLORE ALL</button></Link>
+        <div className="ye-div">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="goo">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                  result="goo"
+                />
+                <feComposite in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+
+          <span className="butto--bubble__container">
+            <a href="/project" className="butto butto--bubble">
+              EXPLORE ALL
+            </a>
+            <span className="butto--bubble__effect-container">
+              <span className="circle top-left"></span>
+              <span className="circle top-left"></span>
+              <span className="circle top-left"></span>
+
+              <span className="butto effect-butto"></span>
+
+              <span className="circle bottom-right"></span>
+              <span className="circle bottom-right"></span>
+              <span className="circle bottom-right"></span>
+            </span>
+          </span>
         </div>
+
         <br />
         <br />
         <br />
         <br />
         <br />
       </div>
+
       <div className="exploration">
         <div style={{ textAlign: "center" }}>
           <p className="my-work" style={{ paddingTop: "80px" }}>
@@ -170,71 +370,31 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <div className="card-carousal">
-          <div id="carouselExample" className="carousel slide">
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <img src={cc1} height={320} alt="" />
-                  <img
-                    src={cc2}
-                    height={400}
-                    alt=""
-                    style={{ margin: "0 30px" }}
-                  />
-                  <img src={cc3} height={320} alt="" />
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <img src={cc4} height={400} alt="..." />
-                  <img
-                    src={cc4}
-                    height={320}
-                    alt="..."
-                    style={{ margin: "0 30px" }}
-                  />
-                  <img src={cc4} height={400} alt="..." />
-                </div>
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+        <div className="card-carousal-type">
+          <img
+            src={cc1}
+            className="cc-cc-img1"
+            alt=""
+            style={{ margin: "70px 0" }}
+          />
+          <img
+            src={cc2}
+            className="cc-cc-img2"
+            alt=""
+            style={{ margin: "0 30px" }}
+          />
+          <img
+            src={cc3}
+            className="cc-cc-img1"
+            alt=""
+            style={{ margin: "70px 0" }}
+          />
+          <img
+            src={cc4}
+            className="cc-cc-img2"
+            alt="..."
+            style={{ margin: "0 30px" }}
+          />
         </div>
         <br />
         <br />
@@ -351,7 +511,47 @@ const Home = () => {
                   Life's Chapters
                 </h3>
               </div>
-              <button className="exploreAll">READ IT NOW</button>
+              <div className="ye-div-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  className="goo"
+                >
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="10"
+                        result="blur"
+                      />
+                      <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo"
+                      />
+                      <feComposite in="SourceGraphic" in2="goo" />
+                    </filter>
+                  </defs>
+                </svg>
+
+                <span className="butto--bubble__container">
+                  <a href="/about" className="butto butto--bubble">
+                    READ IT NOW
+                  </a>
+                  <span className="butto--bubble__effect-container">
+                    <span className="circle top-left"></span>
+                    <span className="circle top-left"></span>
+                    <span className="circle top-left"></span>
+
+                    <span className="butto effect-butto"></span>
+
+                    <span className="circle bottom-right"></span>
+                    <span className="circle bottom-right"></span>
+                    <span className="circle bottom-right"></span>
+                  </span>
+                </span>
+              </div>
             </div>
           </div>
           <img src={last} alt="" className="lhighl" />
@@ -361,21 +561,36 @@ const Home = () => {
 
       <div className="footer">
         <div className="links">
-          <a style={{textDecoration:'none', color:'black'}} href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/" target="_blank"><p>Linkedin</p></a>
-          <div className="dot-foot"></div>
-          <a style={{textDecoration:'none', color:'black'}} href="https://www.behance.net/subhasmpradhan1" target="_blank"><p>Behance</p></a>
-          <div className="dot-foot"></div>
-          <a style={{textDecoration:'none', color:'black'}} href="https://www.instagram.com/subhs.design/" target="_blank"><p>Instagram</p></a>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/"
+            target="_blank"
+          >
+            <p>Linkedin</p>
+          </a>
           <div className="dot-foot"></div>
           <a
-            className="ht"
-            href="#home-top"
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://www.behance.net/subhasmpradhan1"
+            target="_blank"
           >
+            <p>Behance</p>
+          </a>
+          <div className="dot-foot"></div>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://www.instagram.com/subhs.design/"
+            target="_blank"
+          >
+            <p>Instagram</p>
+          </a>
+          <div className="dot-foot"></div>
+          <a className="ht" href="#home-top">
             Back to top
           </a>
         </div>
         <p
-        className="foots-foot"
+          className="foots-foot"
           style={{
             textAlign: "center",
             fontFamily: "gilroy",
@@ -383,7 +598,8 @@ const Home = () => {
             color: "rgba(139, 139, 139, 1)",
           }}
         >
-          Copyrigh@2023 Subhs <span className="gara">|</span> Developed by Subham Parida{" "}
+          Copyrigh@2023 Subhs <span className="gara">|</span> Developed by
+          Subham Parida{" "}
         </p>
       </div>
 
