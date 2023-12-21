@@ -25,7 +25,18 @@ $action-color: $green;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.img-left {
+  height: 270px;
+  margin-left: 5%;
+  position: relative;
+  z-index: 2;
+}
+.spline-char{
+  transform:scale(0.9);
+}
+.spline-char-2{
+  display: none;
+}
 .ye-div-2{
   margin-top: 30px;
   height: 100%;
@@ -174,9 +185,7 @@ $action-color: $green;
 .img-card-right {
   background-color: transparent;
 }
-.img-left {
-  height: 270px;
-}
+
 .img-right {
   height: 400px;
 }
@@ -197,8 +206,9 @@ $action-color: $green;
 }
 .heading-work-wid{
   font-family: rooney;
-  font-size: 75px;
+  font-size: 82px;
   font-weight: bolder;
+  line-height: 80px;
 }
 
 .body-wave {
@@ -574,6 +584,12 @@ $action-color: $green;
     margin-left: -100px;
   }
 }
+@media(max-width:1254px){
+  .img-left{
+    margin-left: 100px;
+    width: 465px;
+  }
+}
 @media(max-width:1238px){
   .above-links-sub{
     margin-left: 80px;
@@ -583,6 +599,12 @@ $action-color: $green;
   }
 }
 @media (max-width: 1235px) {
+  .spline-char{
+    transform: scale(0.8);
+  }
+  .img-left{
+    margin-left: 120px;
+  }
   .card-work {
     height: 420px;
     width: 74%;
@@ -603,6 +625,19 @@ $action-color: $green;
     height: 280px;
   }
 }
+@media(max-width:1170px){
+  .img-left{
+    margin-left: 80px;
+  }
+  .spline-char{
+    margin-right: -80px;
+  }
+}
+@media(max-width:1134px){
+  .spline-char{
+    transform: scale(0.7);
+  }
+}
 @media(max-width:1120px){
   .lhighl{
     margin-left: -180px;
@@ -611,6 +646,11 @@ $action-color: $green;
 @media(max-width:1088px){
   .lhighl{
     margin-left: -200px;
+  }
+}
+@media(max-width:1083px){
+  .spline-char{
+    transform: scale(0.65);
   }
 }
 @media (max-width: 1080px) {
@@ -666,12 +706,19 @@ $action-color: $green;
     margin-left: -240px;
   }
 }
+@media(max-width:1035px){
+  .img-left{
+    width: 400px;
+  }
+  .spline-char{
+    margin-right: -100px;
+  }
+}
 @media(max-width:1019px){
   .lhighl{
     margin-left: -280px;
   }
 }
-
 @media (max-width: 987px) {
   .above-links-sub{
     margin-left: 60px;
@@ -722,6 +769,12 @@ $action-color: $green;
   .lhighl {
     margin-left: -300px;
   }
+  .img-left{
+    margin-left: 60px;
+  }
+  .spline-char{
+    margin-right: -140px;
+  }
 }
 @media (max-width: 920px) {
   .card2,
@@ -760,6 +813,11 @@ $action-color: $green;
     margin: 50px 0;
   }
 }
+@media(max-width:868px){
+  .img-left{
+    width: 350px;
+  }
+}
 @media (max-width: 823px) {
   .next-cards {
     flex-direction: column;
@@ -776,28 +834,38 @@ $action-color: $green;
 }
 @media (max-width: 811px) {
   .img-left {
+    width: 320px;
     height: 180px;
   }
-  .img-right {
+}
+@media(max-width:783px){
+  .Home-top {
+    flex-direction: column;
+    height: 160vh;
+  }
+  .spline-div{
+    margin-top: -520px;
     height: 300px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-left{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 360px;
+    margin-top: -100px;
+  }
+  .spline-char{
+    transform: scale(0.8);
+    margin-left: -400px;  
   }
 }
 @media(max-width:755px){
   .what-i-do{
     width: 660px;
-  }
-}
-@media (max-width: 736px) {
-  .Home-top {
-    flex-direction: column;
-    padding-top: 130px;
-    height: 130vh;
-  }
-  .img-left {
-    height: 180px;
-  }
-  .img-right {
-    height: 350px;
   }
 }
 @media (max-width: 704px) {
@@ -819,6 +887,12 @@ $action-color: $green;
 @media(max-width:597px){
   .what-i-do{
     width: 550px;
+  }
+}
+@media(max-width:560px){
+  .spline-char{
+    transform: scale(0.7);
+    margin-left: -380px;
   }
 }
 @media(max-width:551px){
@@ -868,6 +942,15 @@ $action-color: $green;
     width: 380px;
   }
 }
+@media(max-width:478px){
+  .img-left{
+    width: 350px;
+  }
+  .spline-char{
+    transform: scale(0.65);
+    margin-left: -360px;
+  }
+}
 @media(max-width:451px){
   .what-i-do{
     width: 400px;
@@ -911,6 +994,12 @@ $action-color: $green;
     height: 175px;
   }
 }
+@media(max-width:446px){
+  .spline-char{
+    transform: scale(0.6);
+    margin-left: -345px;
+  }
+}
 @media (max-width: 442px) {
   .card-work {
     padding: 40px;
@@ -919,11 +1008,37 @@ $action-color: $green;
     height: 320px;
   }
 }
+@media(max-width:410px){
+    .img-left{
+      width: 330px;
+    }
+    .spline-char{
+      transform: scale(0.55);
+      margin-left: -315px;
+    }
+}
 @media(max-width:400px){
   .what-i-do{
     width: 380px;
   }
   .heading-work-wid{
     font-size: 60px;
+  }
+}
+@media(max-width:390px){
+  .spline-div{
+    width: 350px;
+  }
+  .Home-top{
+    height: 110vh;
+  }
+  .img-left{
+    height: 180px;
+    width: 300px;
+    margin-top: -30px;
+  }
+  .spline-char{
+    transform: scale(0.45);
+    margin-top: 140px;
   }
 }

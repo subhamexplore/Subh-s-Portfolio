@@ -24,6 +24,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 import { gsap } from "gsap";
 import bnl from "../Assets/images/bbl.gif";
+import Spline from "@splinetool/react-spline";
 
 const Home = () => {
   useEffect(() => {
@@ -161,15 +162,8 @@ const Home = () => {
           <div className="card img-card-left">
             <img src={LeftImg} className="card-img-top img-left" alt="..." />
           </div>
-          <div className="card img-card-right my-animation">
-            <img src={Bounce} className="card-img-top img-right" alt="..." />
-            {/* <iframe
-              src="https://my.spline.design/untitledcopy-aefe3995c822c4d247b596f180828125/"
-              frameborder="0"
-              width="500px"
-              height="450px"
-              // style={{ border: "1px solid red" }}
-            ></iframe> */}
+          <div className="spline-div">
+            <Spline scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode" className="spline-char"/>
           </div>
         </div>
       </section>
