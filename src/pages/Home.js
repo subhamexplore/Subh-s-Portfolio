@@ -320,9 +320,9 @@ const Home = () => {
           </svg>
 
           <span className="butto--bubble__container">
-            <a href="/project" className="butto butto--bubble">
+            <Link to={"/project"} className="butto butto--bubble">
               EXPLORE ALL
-            </a>
+            </Link>
             <span className="butto--bubble__effect-container">
               <span className="circle top-left"></span>
               <span className="circle top-left"></span>
@@ -491,7 +491,7 @@ const Home = () => {
               <p className="my-work" style={{ paddingTop: "80px" }}>
                 My Life Highlights
               </p>
-              <div className="">
+              <div className="mlh-sc">
                 <h3 className="heading-work" style={{ marginTop: "-10px" }}>
                   Voyages Through
                 </h3>
@@ -530,9 +530,9 @@ const Home = () => {
                 </svg>
 
                 <span className="butto--bubble__container">
-                  <a href="/about" className="butto butto--bubble">
+                  <Link to={"/about"} className="butto butto--bubble">
                     READ IT NOW
-                  </a>
+                  </Link>
                   <span className="butto--bubble__effect-container">
                     <span className="circle top-left"></span>
                     <span className="circle top-left"></span>
