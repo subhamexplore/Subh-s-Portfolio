@@ -28,9 +28,9 @@ import Spline from "@splinetool/react-spline";
 
 const Home = () => {
   useEffect(() => {
-    $(".butto--bubble").each(function () {
-      var $circlesTopLeft = $(this).parent().find(".circle.top-left");
-      var $circlesBottomRight = $(this).parent().find(".circle.bottom-right");
+    $(".butto--bubbl").each(function () {
+      var $circlesTopLeft = $(this).parent().find(".circl.top-left");
+      var $circlesBottomRight = $(this).parent().find(".circl.bottom-right");
 
       var tl = gsap.timeline();
       var tl2 = gsap.timeline();
@@ -162,6 +162,7 @@ const Home = () => {
             <img src={LeftImg} className="card-img-top img-left" alt="..." />
           </div>
           <div className="spline-div">
+          {/* "https://prod.spline.design/YBPmQ6pRBvfr-lug/scene.splinecode" */}
             <Spline scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode" className="spline-char"/>
             <img src={Bounce} className='animation img-right' alt="" />
           </div>
@@ -299,7 +300,7 @@ const Home = () => {
             <img src={card3} alt="" className="imgPartSsmall3" />
           </div>
         </div>
-        <div className="ye-div">
+        <div className="ye-div-ea">
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className="goo">
             <defs>
               <filter id="goo">
@@ -319,20 +320,20 @@ const Home = () => {
             </defs>
           </svg>
 
-          <span className="butto--bubble__container">
-            <Link to={"/project"} className="butto butto--bubble">
+          <span className="butto--bubbl__containe">
+            <Link to={"/project"} className="butto butto--bubbl">
               EXPLORE ALL
             </Link>
-            <span className="butto--bubble__effect-container">
-              <span className="circle top-left"></span>
-              <span className="circle top-left"></span>
-              <span className="circle top-left"></span>
+            <span className="butto--bubbl__effect-containe">
+              <span className="circl top-left"></span>
+              <span className="circl top-left"></span>
+              <span className="circl top-left"></span>
 
               <span className="butto effect-butto"></span>
 
-              <span className="circle bottom-right"></span>
-              <span className="circle bottom-right"></span>
-              <span className="circle bottom-right"></span>
+              <span className="circl bottom-right"></span>
+              <span className="circl bottom-right"></span>
+              <span className="circl bottom-right"></span>
             </span>
           </span>
         </div>
@@ -529,20 +530,20 @@ const Home = () => {
                   </defs>
                 </svg>
 
-                <span className="butto--bubble__container">
-                  <Link to={"/about"} className="butto butto--bubble">
+                <span className="butto--bubbl__containe">
+                  <Link to={"/about"} className="butto butto--bubbl">
                     READ IT NOW
                   </Link>
-                  <span className="butto--bubble__effect-container">
-                    <span className="circle top-left"></span>
-                    <span className="circle top-left"></span>
-                    <span className="circle top-left"></span>
+                  <span className="butto--bubbl__effect-containe">
+                    <span className="circl top-left"></span>
+                    <span className="circl top-left"></span>
+                    <span className="circl top-left"></span>
 
                     <span className="butto effect-butto"></span>
 
-                    <span className="circle bottom-right"></span>
-                    <span className="circle bottom-right"></span>
-                    <span className="circle bottom-right"></span>
+                    <span className="circl bottom-right"></span>
+                    <span className="circl bottom-right"></span>
+                    <span className="circl bottom-right"></span>
                   </span>
                 </span>
               </div>

@@ -11,6 +11,12 @@
 .vector-back{
     background-image: url('../images/Vector\ 38.png');
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: 500px;   */
+}
+.arr{
+  position: absolute;
+  height: 100vh;
 }
 .about-head-div{
   display: flex;
@@ -47,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 85px;
 }
 .childhood-sub1 {
   margin: 0 50px;

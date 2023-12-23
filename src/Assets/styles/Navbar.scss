@@ -1,4 +1,9 @@
-  .navbar{
+@font-face {
+  font-family: rooney;
+  src: url(../font/rooney/RooneyPro-Medium.ttf);
+}
+.navbar{
+  font-family: rooney;
       height: 90px;
       position: fixed;
       width: 100%;
@@ -13,8 +18,8 @@
   border-radius: 20px;
 }
 .navbar-nav{
-  background-color: rgba(255, 255, 255, 0.266);
-  width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 310px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +42,7 @@
 }
 
 .pulse-button {
-  outline: 10px solid rgba(255, 255, 255, 0.214);
+  outline: 10px solid rgba(255, 255, 255, 0.1);
   margin: 7px 18px;
   width: 30px;
   height: 30px;

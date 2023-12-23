@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Permanent+Marker&display=swap");
-$dark-blue: #222;
-$green: #90feb5;
-$action-color: $green;
 
 * {
   box-sizing: border-box;
@@ -17,7 +14,7 @@ $action-color: $green;
 
 .button {
   -webkit-font-smoothing: antialiased;
-  background-color: $dark-blue;
+  background-color: black;
   border: none;
   color: #fff;
   display: inline-block;
@@ -35,7 +32,7 @@ $action-color: $green;
   font-family: "Permanent Marker", cursive;
 
   &:hover {
-    background-color: $action-color;
+    background-color: black;
     color: #fff;
   }
   
@@ -54,11 +51,11 @@ $action-color: $green;
     }
 
     &:hover + .button--bubble__effect-container .circle {
-      background: darken($action-color, 15%);
+      background: darken(black, 15%);
     }
 
     &:hover + .button--bubble__effect-container .button {
-      background: darken($action-color, 15%);
+      background: darken(black, 15%);
     }
 
     &:active + .button--bubble__effect-container {
@@ -77,8 +74,8 @@ $action-color: $green;
         left: 25%;
         z-index: 1;
         transform: translateY(-50%);
-        background: $dark-blue;
-        transition: background 0.1s ease-out;
+        background: black;
+        transition: black 0.1s ease-out;
       }
     }
   }
@@ -101,8 +98,8 @@ $action-color: $green;
     width: 25px;
     height: 25px;
     border-radius: 15px;
-    background: $dark-blue;
-    transition: background 0.1s ease-out;
+    background: black;
+    transition: black 0.1s ease-out;
 
     &.top-left {
         top: 40%;

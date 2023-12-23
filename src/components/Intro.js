@@ -196,7 +196,7 @@ const Intro = ({onIntroClick}) => {
       setTimeout(() => {
         button.classList.remove("btnn--clicked");
         onIntroClick();
-      }, 2000);
+      }, 1400);
       setTimeout(() => {
         document.querySelectorAll("span").forEach((element) => {
           element.classList.remove("expanded");

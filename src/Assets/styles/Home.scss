@@ -11,9 +11,9 @@
 
 
 
-$dark-blue: #FCE25A;
-$green: #90feb5;
-$action-color: $green;
+// $dark-b
+// $green: #90feb5;
+// $action-color: $green;
 
 * {
   box-sizing: border-box;
@@ -37,15 +37,20 @@ $action-color: $green;
 .spline-char-2{
   display: none;
 }
+.ye-div-ea{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  height: 100%;
+}
 .ye-div-2{
   margin-top: 30px;
   height: 100%;
-  animation: hue-rotate 10s linear infinite;
 }
 
 .butto {
   -webkit-font-smoothing: antialiased;
-  background-color: $dark-blue;
+  background-color: #FCE25A;
   border: none;
   color: black;
   display: inline-block;
@@ -63,7 +68,7 @@ $action-color: $green;
   font-family: "Permanent Marker", cursive;
 
   &:hover {
-    background-color: $action-color;
+    background-color: #FCE25A;
     color: black;
   }
   
@@ -71,29 +76,29 @@ $action-color: $green;
     transform: scale(0.95);
   }
 
-  &--bubble {
+  &--bubbl {
     position: relative;
     z-index: 2;
     color: black;
-    background: none;
+    background: #FCE25A;
 
     &:hover {
-      background: none;
+      background: #FCE25A;
     }
 
     &:hover + .butto--bubble__effect-container .circle {
-      background: darken($action-color, 15%);
+      // background: darken($dark-blue, 15%);
     }
 
     &:hover + .butto--bubble__effect-container .butto {
-      background: darken($action-color, 15%);
+      // background: darken($dark-blue, 15%);
     }
 
     &:active + .butto--bubble__effect-container {
       transform: scale(0.95);
     }
 
-    &__container {
+    &__containe {
       position: relative;
       display: inline-block;
 
@@ -105,14 +110,14 @@ $action-color: $green;
         left: 25%;
         z-index: 1;
         transform: translateY(-50%);
-        background: $dark-blue;
-        transition: background 0.1s ease-out;
+        background: #FCE25A;
+        transition: #FCE25A 0.1s ease-out;
       }
     }
   }
 }
 
-.butto--bubble__effect-container {
+.butto--bubbl__effect-containe {
   position: absolute;
   display: block;
   width: 200%;
@@ -124,13 +129,13 @@ $action-color: $green;
   transition: all 0.1s ease-out;
   pointer-events: none;
 
-  .circle {
+  .circl{
     position: absolute;
     width: 25px;
     height: 25px;
     border-radius: 15px;
-    background: $dark-blue;
-    transition: background 0.1s ease-out;
+    background: #FCE25A;
+    transition: #FCE25A 0.1s ease-out;
 
     &.top-left {
         top: 40%;
@@ -152,7 +157,7 @@ $action-color: $green;
 }
 
 
-.butto--bubble__container {
+.butto--bubbl__containe {
   top: 50%;
   margin-top: -25px;
 }
@@ -198,7 +203,8 @@ $action-color: $green;
   text-align: center; 
   width: 750px;
   margin: auto;
-  padding: 50px 0;
+  padding: 100px 0;
+  margin-top: 10px;
 }
 .heading-work-wid{
   font-family: rooney;
@@ -478,6 +484,8 @@ $action-color: $green;
 .cc-cc-img2{
   height: 420px;
 }
+
+//scroll bar
 .card-carousal-type::-webkit-scrollbar-track{
   margin: 100px;
 }
@@ -489,6 +497,18 @@ $action-color: $green;
   border-radius: 10px;
   background-color: #ffffff38;  
 }
+.card-work::-webkit-scrollbar-track{
+  margin: 100px;
+}
+.card-work::-webkit-scrollbar {
+  width: 30px;
+  height: 5px;
+}
+.card-work::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ffffff38;  
+}
+
 .make-sense {
   background-color: rgba(8, 0, 37, 1);
 }
@@ -548,7 +568,7 @@ $action-color: $green;
   width: 100%;
 }
 .work-in {
-  margin-left: 100px;
+  margin-left: 12.8vw;
   margin-bottom: 50px;
 }
 .subhs-img {

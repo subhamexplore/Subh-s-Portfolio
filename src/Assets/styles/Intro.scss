@@ -111,10 +111,11 @@
   height: auto;
 }
 $colors: (
-  blue: #1b8bf9,
-  orange: #ff6c19,
-  green: #41ff9f,
-  white: #f9f9f9,
+  blue: white,
+  orange: 
+  #998DF8,
+  green: #FCE25A,
+  white: rgba(8, 0, 36, 1),
 );
 $i: 0.25s;
 @each $colorName, $color in $colors {
