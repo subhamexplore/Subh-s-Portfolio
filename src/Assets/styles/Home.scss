@@ -1020,6 +1020,18 @@ $action-color: $green;
     height: 320px;
   }
 }
+@media(max-width:431px){
+  .Home-top{
+    height: 120vh;
+  }
+  .spline-char{
+    display: none;
+  }
+  .img-right{
+    display: block;
+    margin-top: 300px;
+  }
+}
 @media(max-width:410px){
     .img-left{
       width: 330px;

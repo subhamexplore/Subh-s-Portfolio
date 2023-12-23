@@ -163,6 +163,7 @@ const Home = () => {
           </div>
           <div className="spline-div">
             <Spline scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode" className="spline-char"/>
+            <img src={Bounce} className='animation img-right' alt="" />
           </div>
         </div>
       </section>
