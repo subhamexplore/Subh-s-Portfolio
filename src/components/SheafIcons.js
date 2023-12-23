@@ -245,7 +245,7 @@
           className="footer"
           style={{ backgroundColor: "rgba(249, 249, 249, 1)" }}
         >
-          <div className="links">
+          <div className="links" style={{paddingTop:'22px'}}>
             <a
               style={{ textDecoration: "none", color: "black" }}
               href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/"

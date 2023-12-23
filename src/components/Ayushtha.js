@@ -486,7 +486,7 @@ const Ayushtha = () => {
         className="footer"
         style={{ backgroundColor: "rgba(249, 249, 249, 1)" }}
       >
-        <div className="links">
+        <div className="links" style={{paddingTop:'22px'}}>
           <a style={{textDecoration:'none', color:'black'}} href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/" target="_blank"><p>Linkedin</p></a>
           <div className="dot-foot"></div>
           <a style={{textDecoration:'none', color:'black'}} href="https://www.behance.net/subhasmpradhan1" target="_blank"><p>Behance</p></a>

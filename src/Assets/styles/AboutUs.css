@@ -9,14 +9,10 @@
   src: url(../font/gilroy/Gilroy-Regular.ttf);
 }
 .vector-back{
-    background-image: url('../images/Vector\ 38.png');
+    background-image: url('../images/line.png');
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* background-position: 500px;   */
-}
-.arr{
-  position: absolute;
-  height: 100vh;
+    background-size: cover;
+    background-position: bottom -190px right 100px;
 }
 .about-head-div{
   display: flex;
@@ -53,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 85px;
+  margin-top: 120px;
 }
 .childhood-sub1 {
   margin: 0 50px;

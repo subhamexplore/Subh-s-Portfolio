@@ -4,10 +4,8 @@ import aboutTopImg from "../Assets/images/Group 28864.png";
 import about2img from "../Assets/images/Rectangle 157.png";
 import about3img from "../Assets/images/Group 28865.png";
 import about4img from "../Assets/images/Rectangle 159.png";
-import about5img from "../Assets/images/Rectangle 157.png";
-import about6img from '../Assets/images/Rectangle 162.png'
+import about5img from "../Assets/images/Rectangle 162.png";
 import vector from "../Assets/images/Vector 38.png";
-import arr from '../Assets/images/arr.png'
 
 const AboutUs = () => {
   const aboutRef = useRef(null);
@@ -19,9 +17,6 @@ const AboutUs = () => {
 
   return (
     <div style={{ paddingTop: "90px" }} ref={aboutRef}>
-    {/* <div className="arr">
-      <img src={arr} alt="" />
-    </div> */}
       <div>
         <div className="vector-back">
           <div className="about-head-div" style={{marginTop:'50px'}}>
@@ -49,6 +44,25 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+          <div className="childhood">
+            <img
+              className="childhood-sub1"
+              src={about3img}
+              alt=""
+              height={400}
+            />
+            <div className="childhood-sub2">
+              <p className="childhood-head1">Empathy: Observer by</p>
+              <p className="childhood-head2">Nature, Listener by Choice</p>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <p className="childhood-para">
+                  In school, I observed quietly in corners and found joy in
+                  listening to friends. These moments inspire my user-centric
+                  design journey.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div className="childhood">
             <div className="childhood-sub2">
@@ -70,32 +84,10 @@ const AboutUs = () => {
             />
           </div>
 
-          
           <div className="childhood">
             <img
               className="childhood-sub1"
-              src={about3img}
-              alt=""
-              height={400}
-            />
-            <div className="childhood-sub2">
-              <p className="childhood-head1">Empathy: Observer by</p>
-              <p className="childhood-head2">Nature, Listener by Choice</p>
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <p className="childhood-para">
-                  In school, I observed quietly in corners and found joy in
-                  listening to friends. These moments inspire my user-centric
-                  design journey.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="childhood">
-            <img
-              className="childhood-sub1"
-              src={about6img}
+              src={about5img}
               alt=""
               height={400}
             />
@@ -112,8 +104,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        
-        
 
         <div className="about-foot">
           <div>

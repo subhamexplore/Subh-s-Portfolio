@@ -60,6 +60,7 @@
 .bbt-para{
     font-family: gilroy;
     color: rgba(91, 91, 91, 1);
+    line-height: 180%;
 }
 .bbt-risk{
     font-family: gilroy;
@@ -78,11 +79,13 @@
     color: rgba(91, 91, 91, 1);
     font-weight: 600;
     letter-spacing: 0.5px;
+    line-height: 180%;
 }
 .bbt-second-para-2, .bbt-second-para-3{
     font-family: gilroy;
     color: rgba(91, 91, 91, 1);
     font-size: 16px;
+    line-height: 180%;
 }
 .bbt-para-dark{
     font-weight: 600;
@@ -91,11 +94,13 @@
     font-family: gilroy;
     font-size: 16px;
     font-weight: 700;
+    line-height: 180%;
 }
 .bbt-obj-para{
     font-family: gilroy;
     color: rgba(91, 91, 91, 1);
     font-size: 16px;
+    line-height: 180%;
 }
 
 .task-flow{
@@ -119,6 +124,7 @@
 .in-para{
     color: rgba(91, 91, 91, 1);
     font-family: gilroy;
+    line-height: 160%;
 }
 .bbt-para-dark-in{
     font-weight: 600;

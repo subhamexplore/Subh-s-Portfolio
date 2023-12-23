@@ -7,10 +7,14 @@ import phone2 from "../Assets/images/Explore.png";
 import card2 from "../Assets/images/card2.png";
 import card3 from "../Assets/images/card3.png";
 import bulb from "../Assets/images/bulb.png";
-import cc1 from "../Assets/images/Rectangle 12.png";
-import cc2 from "../Assets/images/Rectangle 14.png";
-import cc3 from "../Assets/images/Rectangle 15.png";
+import cc1 from "../Assets/images/Rectangle 14.png";
+import cc2 from "../Assets/images/Rectangle 12.png";
+import cc3 from "../Assets/images/Rectangle 119.png";
 import cc4 from "../Assets/images/Rectangle 16.png";
+import cc5 from "../Assets/images/Rectangle 17.png";
+import cc6 from "../Assets/images/Rectangle 118.png";
+import cc7 from "../Assets/images/Rectangle 15.png";
+import cc8 from "../Assets/images/Rectangle 120.png";
 import port1 from "../Assets/images/Rectangle 18.png";
 import port2 from "../Assets/images/Rectangle 19.png";
 import port3 from "../Assets/images/Rectangle 20.png";
@@ -23,7 +27,7 @@ import wave from "../Assets/images/wave.png";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import { gsap } from "gsap";
-import bnl from "../Assets/images/bbl.gif";
+// import bnl from "../Assets/images/bbl.gif";
 import Spline from "@splinetool/react-spline";
 
 const Home = () => {
@@ -152,19 +156,18 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section
-        id="home-top"
-        className="homii"
-        ref={homeRef}
-      >
+      <section id="home-top" className="homii" ref={homeRef}>
         <div className="Home-top">
           <div className="card img-card-left">
             <img src={LeftImg} className="card-img-top img-left" alt="..." />
           </div>
           <div className="spline-div">
-          {/* "https://prod.spline.design/YBPmQ6pRBvfr-lug/scene.splinecode" */}
-            <Spline scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode" className="spline-char"/>
-            <img src={Bounce} className='animation img-right' alt="" />
+            {/* "https://prod.spline.design/YBPmQ6pRBvfr-lug/scene.splinecode" */}
+            <Spline
+              scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode"
+              className="spline-char"
+            />
+            <img src={Bounce} className="animation img-right" alt="" />
           </div>
         </div>
       </section>
@@ -346,7 +349,7 @@ const Home = () => {
       </div>
 
       <div className="exploration">
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center", paddingTop:'50px' }}>
           <p className="my-work" style={{ paddingTop: "80px" }}>
             Daily Exploraton
           </p>
@@ -365,7 +368,7 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <div className="card-carousal-type">
+        {/* <div className="card-carousal-type">
           <img
             src={cc1}
             className="cc-cc-img1"
@@ -390,6 +393,43 @@ const Home = () => {
             alt="..."
             style={{ margin: "0 30px" }}
           />
+        </div> */}
+        <div class="wrapper">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src={cc1}/>
+              </div>
+
+              <div class="slide1">
+                <img src={cc2} />
+              </div>
+
+              <div class="slide">
+                <img src={cc3} />
+              </div>
+
+              <div class="slide1">
+                <img src={cc4} />
+              </div>
+
+              <div class="slide">
+                <img src={cc5} />
+              </div>
+
+              <div class="slide1">
+                <img src={cc6} />
+              </div>
+
+              <div class="slide">
+                <img src={cc7} />
+              </div>
+
+              <div class="slide1">
+                <img src={cc8} />
+              </div>
+            </div>
+          </div>
         </div>
         <br />
         <br />
@@ -401,6 +441,7 @@ const Home = () => {
             margin: "auto",
             color: "rgba(217, 217, 217, 0.5)",
             fontFamily: "gilroy",
+            marginBottom:'100px'
           }}
         >
           Exploring various styles and tools is like navigating the vast design
