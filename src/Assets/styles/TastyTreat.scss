@@ -39,7 +39,6 @@ $action-color: $green;
 * {
   box-sizing: border-box;
 }
-
 .ye-div{
   display: flex;
   justify-content: center;
@@ -222,9 +221,38 @@ $action-color: $green;
     margin: 0 10px;
   }
 }
+@media(max-width:497px){
+  .ye-div{
+    width: 300px;
+    margin: auto;
+  }
+  .bubble-wala-button{
+    width: 251px;
+    height: 60px;
+  }
+}
+@media(max-width:494px){
+  .ye-div{
+    transform: scale(0.8);
+  }
+}
+@media(max-width:489px){
+  .ye-div{
+    width: 251px;
+    margin: auto;
+  }
+  .bubble-wala-button{
+    height: 60px;
+  }
+}
 @media(max-width:433px){
   .tt-tt-img-2, .tt-tt-img-3{
     height: 150px;
     margin: 0 10px;
+  }
+}
+@media(max-width:400px){
+  .ye-div{
+    transform: scale(0.7);
   }
 }

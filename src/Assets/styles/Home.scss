@@ -185,11 +185,6 @@ $action-color: $green;
 .img-card-right {
   background-color: transparent;
 }
-
-.img-right {
-  height: 400px;
-}
-
 .img-right {
   color: #eee;
   padding-top: 30px;
@@ -197,6 +192,7 @@ $action-color: $green;
   text-align: center;
   font-size: 70px;
   animation: bounce 1s ease infinite alternate;
+  display: none;
 }
 .what-i-do{
   text-align: center; 
@@ -495,6 +491,7 @@ $action-color: $green;
 }
 .make-sense {
   background-color: rgba(8, 0, 37, 1);
+  border: 1px solid red;
 }
 .above-links {
   background-color: rgba(24, 14, 57, 1);
@@ -571,6 +568,7 @@ $action-color: $green;
 }
 .toggle-img {
   display: none;
+  border: 1px solid yellow;
 }
 .subhs-img2 {
   display: flex;
@@ -1065,20 +1063,14 @@ $action-color: $green;
     font-size: 60px;
   }
 }
-@media(max-width:390px){
-  .spline-div{
-    width: 320px;
+@media(max-width:391px){
+.img-right{
+  display: block;
 }
-.spline-char{
-  transform: scale(0.4);
-  margin-top: 220px;
+.port11{
+  height: 300px;
 }
-.img-left{
-  width: 280px;
-  height: auto;
-  margin-top: -50px;
-}
-.Home-top{
-  height: 100vh;
+.port22,.port33{
+  height: 150px;
 }
 }

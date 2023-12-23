@@ -133,7 +133,7 @@ const TastyTreat = () => {
     ttRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, []);
   return (
-    <div style={{ paddingTop: "100px" }} ref={ttRef} id='tt-page'>
+    <div className='haha' style={{ paddingTop: "100px" }} ref={ttRef} id='tt-page'>
       <div>
         <p className="small-head-bbt">Tasty Treat</p>
         <p className="head-bbt lh-head-bbt">Mouth Watering Castle</p>
@@ -198,7 +198,7 @@ const TastyTreat = () => {
             </defs>
           </svg>
 
-          <span className="button--bubble__container">
+          <span className="button--bubble__container bubble-wala-button">
             <a href="https://www.behance.net/gallery/135513669/Tasty-Treat-(3D-Project)" target="_blank" className="button button--bubble">
               Behance Case Study
             </a>
@@ -222,7 +222,7 @@ const TastyTreat = () => {
       <br />
 
       <div className="footer" style={{backgroundColor:"rgba(249, 249, 249, 1)"}}>
-      <div className="links">
+      <div className="links" style={{paddingTop:'22px'}}>
           <a style={{textDecoration:'none', color:'black'}} href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/" target="_blank"><p>Linkedin</p></a>
           <div className="dot-foot"></div>
           <a style={{textDecoration:'none', color:'black'}} href="https://www.behance.net/subhasmpradhan1" target="_blank"><p>Behance</p></a>
