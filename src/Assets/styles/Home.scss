@@ -208,7 +208,7 @@ $action-color: $green;
   font-family: rooney;
   font-size: 82px;
   font-weight: bolder;
-  line-height: 100px;
+  line-height: 80px;
 }
 
 .body-wave {
@@ -1048,6 +1048,16 @@ $action-color: $green;
   }
 }
 @media(max-width:400px){
+  .Home-top{
+    height: 120vh;
+  }
+  .spline-char{
+    margin-top: 140px;
+    transform: scale(0.45);
+  }
+  .spline-div{
+    width: 320px;
+  }
   .what-i-do{
     width: 380px;
   }
@@ -1057,18 +1067,18 @@ $action-color: $green;
 }
 @media(max-width:390px){
   .spline-div{
-    width: 350px;
-  }
-  .Home-top{
-    height: 110vh;
-  }
-  .img-left{
-    height: 180px;
-    width: 300px;
-    margin-top: -30px;
-  }
-  .spline-char{
-    transform: scale(0.45);
-    margin-top: 140px;
-  }
+    width: 320px;
+}
+.spline-char{
+  transform: scale(0.4);
+  margin-top: 220px;
+}
+.img-left{
+  width: 280px;
+  height: auto;
+  margin-top: -50px;
+}
+.Home-top{
+  height: 100vh;
+}
 }

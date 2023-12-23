@@ -155,7 +155,6 @@ const Home = () => {
       <section
         id="home-top"
         className="homii"
-        // style={{}}
         ref={homeRef}
       >
         <div className="Home-top">
@@ -163,7 +162,7 @@ const Home = () => {
             <img src={LeftImg} className="card-img-top img-left" alt="..." />
           </div>
           <div className="spline-div">
-            <Spline scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode" className="spline-char"/>
+            {/* <Spline scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode" className="spline-char"/> */}
           </div>
         </div>
       </section>
