@@ -435,14 +435,7 @@ const Home = () => {
         <br />
         <br />
         <h4
-          style={{
-            width: "50%",
-            textAlign: "center",
-            margin: "auto",
-            color: "rgba(217, 217, 217, 0.5)",
-            fontFamily: "gilroy",
-            marginBottom:'100px'
-          }}
+        className="below-caro"
         >
           Exploring various styles and tools is like navigating the vast design
           ocean. I enjoy challenges and getting hands-on.

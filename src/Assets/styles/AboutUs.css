@@ -51,6 +51,12 @@
   align-items: center;
   margin-top: 120px;
 }
+.childhood1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
 .childhood-sub1 {
   margin: 0 50px;
   height:400px;
@@ -61,16 +67,19 @@
 .childhood-head1 {
   font-family: rooney;
   font-size: 40px;
+  line-height: 50px;
 }
 .childhood-head2 {
   font-family: rooney;
   font-size: 40px;
   margin-top: -20px;
+  line-height: 50px;
 }
 .childhood-head3 {
   font-family: rooney;
   font-size: 40px;
   margin-top: -20px;
+  line-height: 50px;
 }
 .childhood-para {
   font-family: gilroy;
@@ -118,8 +127,12 @@
   }
 }
 @media(max-width:800px){
-  .childhood{
+  .childhood1{
     flex-direction: column;
+    text-align: center;
+  }
+  .childhood{
+    flex-direction: column-reverse;
     text-align: center;
   }
   .childhood-sub1{

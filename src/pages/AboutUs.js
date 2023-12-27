@@ -27,8 +27,7 @@ const AboutUs = () => {
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <p className="top-about-para">
-              To celebrate our massive launch, we have prepared prizes worth
-              $17,000 in total to reward over a hundred lucky winners!
+            Life's full of waves bringing unexpected gifts and surprises to the shore. Here are a few from my unique voyage. 
             </p>
           </div>
           <div className="childhood">
@@ -64,7 +63,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="childhood">
+          <div className="childhood1">
             <div className="childhood-sub2">
               <p className="childhood-head1">Zairza: Igniting Design</p>
               <p className="childhood-head2">Passion</p>
