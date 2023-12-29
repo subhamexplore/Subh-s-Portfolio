@@ -55,6 +55,12 @@
 .pulse-button:hover {
   animation: pulse 1.5s;
 }
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar-toggler.custom-class .navbar-toggler-icon {
+  color: #ff0000;
+}
 
 @keyframes pulse {
   0% {

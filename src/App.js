@@ -13,6 +13,12 @@ import SheafIcons from "./components/SheafIcons";
 import PackagingWorkshop from "./components/PackagingWorkshop";
 
 function App() {
+
+  const [home, sethome] = useState(true);
+  const [project, setproject] = useState(false);
+  const [about, setabout] = useState(false);
+
+
   const [click, setClick] = useState(false);
 
   const handleIntroClick = () => {
@@ -22,9 +28,9 @@ function App() {
     <div className="App">
       {click ? (
         <div className="App">
-        <Navbar/>
+        <Navbar home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>} />
             <Route path="/project" element={<Project />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/bigBoyToyz" element={<BigBoyToyz />} />

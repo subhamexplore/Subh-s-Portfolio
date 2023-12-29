@@ -30,7 +30,7 @@ import { gsap } from "gsap";
 // import bnl from "../Assets/images/bbl.gif";
 import Spline from "@splinetool/react-spline";
 
-const Home = () => {
+const Home = ({home,sethome, project, setproject, about, setabout}) => {
   useEffect(() => {
     $(".butto--bubbl").each(function () {
       var $circlesTopLeft = $(this).parent().find(".circl.top-left");
@@ -324,7 +324,11 @@ const Home = () => {
           </svg>
 
           <span className="butto--bubbl__containe">
-            <Link to={"/project"} className="butto butto--bubbl">
+            <Link to={"/project"} onClick={() => {
+                    sethome(false);
+                    setproject(true);
+                    setabout(false);
+                  }} className="butto butto--bubbl">
               EXPLORE ALL
             </Link>
             <span className="butto--bubbl__effect-containe">
@@ -349,7 +353,7 @@ const Home = () => {
       </div>
 
       <div className="exploration">
-        <div style={{ textAlign: "center", paddingTop:'50px' }}>
+        <div style={{ textAlign: "center", paddingTop: "50px" }}>
           <p className="my-work" style={{ paddingTop: "80px" }}>
             Daily Exploraton
           </p>
@@ -398,7 +402,7 @@ const Home = () => {
           <div class="slider">
             <div class="slide-track">
               <div class="slide">
-                <img src={cc1}/>
+                <img src={cc1} />
               </div>
 
               <div class="slide1">
@@ -434,9 +438,7 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <h4
-        className="below-caro"
-        >
+        <h4 className="below-caro">
           Exploring various styles and tools is like navigating the vast design
           ocean. I enjoy challenges and getting hands-on.
         </h4>
@@ -565,7 +567,11 @@ const Home = () => {
                 </svg>
 
                 <span className="butto--bubbl__containe">
-                  <Link to={"/about"} className="butto butto--bubbl">
+                  <Link to={"/about"} onClick={() => {
+                    sethome(false);
+                    setproject(false);
+                    setabout(true);
+                  }} className="butto butto--bubbl">
                     READ IT NOW
                   </Link>
                   <span className="butto--bubbl__effect-containe">

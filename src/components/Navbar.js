@@ -6,10 +6,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import resume from "./Subhasmita Pradhan.pdf";
 
-const Navbar = () => {
-  const [home, sethome] = useState(true);
-  const [project, setproject] = useState(false);
-  const [about, setabout] = useState(false);
+const Navbar = ({home,sethome, project, setproject, about, setabout}) => {
+  // const [home, sethome] = useState(true);
+  // const [project, setproject] = useState(false);
+  // const [about, setabout] = useState(false);
 
   const handleClick = () => {
     const link = document.createElement("a");
@@ -51,7 +51,6 @@ const Navbar = () => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            style={{ color: "white" }}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
