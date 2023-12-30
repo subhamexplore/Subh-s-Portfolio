@@ -77,6 +77,7 @@
 }
 .img-left {
   height: 270px;
+  width: auto;
   margin-left: 5%;
   position: relative;
   z-index: 2;
@@ -145,7 +146,7 @@
     }
 
     &:active + .butto--bubble__effect-container {
-      transform: scale(0.95);
+      transform: scale(0.75);
     }
 
     &__containe {
@@ -166,6 +167,7 @@
     }
   }
 }
+
 
 .butto--bubbl__effect-containe {
   position: absolute;
@@ -680,6 +682,7 @@
   .img-left {
     margin-left: 100px;
     width: 465px;
+    height: auto;
   }
 }
 @media (max-width: 1238px) {
@@ -759,6 +762,7 @@
 @media (max-width: 1083px) {
   .img-left {
     height: 250px;
+    width: auto;
   }
   .img-right {
     height: 380px;
@@ -801,6 +805,7 @@
 @media (max-width: 1035px) {
   .img-left {
     width: 400px;
+    height: auto;
   }
   .spline-char {
     margin-right: 0px;
@@ -822,6 +827,7 @@
 @media (max-width: 981px) {
   .img-left {
     height: 220px;
+    width: auto;
   }
   .img-right {
     height: 350px;
@@ -911,6 +917,7 @@
 @media (max-width: 868px) {
   .img-left {
     width: 350px;
+    height: auto;
   }
   .spline-char {
     margin-right: -30px;
@@ -936,7 +943,7 @@
 @media (max-width: 811px) {
   .img-left {
     width: 320px;
-    height: 180px;
+    height: auto;
   }
 }
 @media (max-width: 783px) {
@@ -1046,6 +1053,7 @@
 @media (max-width: 478px) {
   .img-left {
     width: 350px;
+    height: auto;
   }
   .spline-char {
     transform: scale(0.65);
@@ -1187,3 +1195,17 @@
     height: 150px;
   }
 }
+@media(max-width:381px){
+  .what-i-do {
+    width: 330px;
+  }
+  .heading-work-wid {
+    font-size: 50px;
+  }
+}
+@media(max-width:375px){
+  .button-home-exp{
+    transform: scale(0.85);
+  }
+}
+

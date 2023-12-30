@@ -347,7 +347,7 @@ const Home = ({ home, sethome, project, setproject, about, setabout }) => {
             </defs>
           </svg>
 
-          <span className="butto--bubbl__containe">
+          <span className="butto--bubbl__containe button-home-exp">
             <Link
               to={"/project"}
               onClick={() => {
@@ -670,8 +670,6 @@ const Home = ({ home, sethome, project, setproject, about, setabout }) => {
           Subham Parida{" "}
         </p>
       </div>
-
-      <div className="nothing"></div>
     </>
   );
 };

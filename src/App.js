@@ -28,7 +28,7 @@ function App() {
       {
         click ? (
         <div className="App">
-        <Navbar home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>
+        {/* <Navbar home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/> */}
           <Routes>
             <Route path="/" element={<Home home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>} />
             <Route path="/project" element={<Project />} />
