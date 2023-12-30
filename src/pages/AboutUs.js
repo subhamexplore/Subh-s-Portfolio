@@ -16,7 +16,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop: "90px" }} ref={aboutRef}>
+    <div id='about-page' style={{ paddingTop: "90px" }} ref={aboutRef}>
       <div>
         <div className="vector-back">
           <div className="about-head-div" style={{marginTop:'50px'}}>
@@ -130,7 +130,7 @@ const AboutUs = () => {
           <div className="dot-foot"></div>
           <a
             className="ht"
-            href="#tt-page"
+            href="#about-page"
           >
             Back to top
           </a>

@@ -18,7 +18,7 @@ const Project = () => {
     projectRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, []);
   return (
-    <div style={{ paddingTop: "90px" }} ref={projectRef}>
+    <div id='project-page' style={{ paddingTop: "90px" }} ref={projectRef}>
       <div className="workbook-img-div">
         <img className="workbook-img" src={workbook} alt="" />
       </div>
@@ -170,7 +170,7 @@ const Project = () => {
           <div className="dot-foot"></div>
           <a
             className="ht"
-            href="#tt-page"
+            href="#project-page"
           >
             Back to top
           </a>
