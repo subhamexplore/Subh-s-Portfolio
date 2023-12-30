@@ -186,14 +186,13 @@ const Intro = ({onIntroClick}) => {
 
   useEffect(() => {
     const button = document.querySelector(".btnn");
-  
-    const handleClickOrTouch = (e) => {
+    button.addEventListener("click", (e) => {
       e.preventDefault();
       button.classList.add("btnn--clicked");
       document.querySelectorAll("span").forEach((element) => {
         element.classList.add("expanded");
       });
-  
+
       setTimeout(() => {
         button.classList.remove("btnn--clicked");
         onIntroClick();
@@ -203,25 +202,13 @@ const Intro = ({onIntroClick}) => {
           element.classList.remove("expanded");
         });
       }, 1700);
-    };
-  
-    // Add event listeners for both click and touchstart
-    button.addEventListener("click", handleClickOrTouch);
-    button.addEventListener("touchstart", handleClickOrTouch);
-  
-    // Cleanup: Remove event listeners when the component unmounts
-    return () => {
-      button.removeEventListener("click", handleClickOrTouch);
-      button.removeEventListener("touchstart", handleClickOrTouch);
-    };
-  }, [onIntroClick]);
-  
-  
+    });
+  }, []);
 
   return (
     <>
     <div className="intro-page">
-      <button class="btnn">
+      <a class="btnn" href="" title="">
       <div className="body-heya">
         <div class="stage">
           <div class="content">
@@ -229,7 +216,7 @@ const Intro = ({onIntroClick}) => {
           </div>
         </div>
       </div>
-      </button>
+      </a>
       <span class="color color--blue" data-value="1"></span>
       <span class="color color--orange" data-value="1"></span>
       <span class="color color--green" data-value="1"></span>

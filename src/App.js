@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // import "./App.scss";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
@@ -17,7 +17,16 @@ function App() {
   const [home, sethome] = useState(true);
   const [project, setproject] = useState(false);
   const [about, setabout] = useState(false);
-
+  // Explain
+  const [isfirstload, setisfirstload] = useState(true)
+  const [isvisible, setvisible] = useState(false)
+  useEffect(() => {
+      if (!isfirstload) {
+          window.location.reload();
+      } else {
+          setisfirstload(false)
+      }
+  }, [ isvisible ]);
 
   const [click, setClick] = useState(false);
 
@@ -26,7 +35,7 @@ function App() {
   };
   return (
     <div className="App">
-      {/* {click ? (
+      {click ? (
         <div className="App">
         <Navbar home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>
           <Routes>
@@ -40,9 +49,9 @@ function App() {
             <Route path="/packagingWorkshop" element={<PackagingWorkshop />} />
           </Routes>
     </div> 
-      ) : ( */}
+      ) : (
         <Intro onIntroClick={handleIntroClick} />
-      {/* )} */}
+      )}
     </div>
   );
 }
