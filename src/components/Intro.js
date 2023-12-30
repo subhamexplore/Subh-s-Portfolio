@@ -216,11 +216,12 @@ const Intro = ({onIntroClick}) => {
     };
   }, [onIntroClick]);
   
+  
 
   return (
     <>
     <div className="intro-page">
-      <a class="btnn" href="" title="">
+      <button class="btnn">
       <div className="body-heya">
         <div class="stage">
           <div class="content">
@@ -228,7 +229,7 @@ const Intro = ({onIntroClick}) => {
           </div>
         </div>
       </div>
-      </a>
+      </button>
       <span class="color color--blue" data-value="1"></span>
       <span class="color color--orange" data-value="1"></span>
       <span class="color color--green" data-value="1"></span>
