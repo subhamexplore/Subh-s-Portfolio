@@ -186,13 +186,14 @@ const Intro = ({onIntroClick}) => {
 
   useEffect(() => {
     const button = document.querySelector(".btnn");
-    button.addEventListener("click", (e) => {
+  
+    const handleClickOrTouch = (e) => {
       e.preventDefault();
       button.classList.add("btnn--clicked");
       document.querySelectorAll("span").forEach((element) => {
         element.classList.add("expanded");
       });
-
+  
       setTimeout(() => {
         button.classList.remove("btnn--clicked");
         onIntroClick();
@@ -202,8 +203,19 @@ const Intro = ({onIntroClick}) => {
           element.classList.remove("expanded");
         });
       }, 1700);
-    });
-  }, []);
+    };
+  
+    // Add event listeners for both click and touchstart
+    button.addEventListener("click", handleClickOrTouch);
+    button.addEventListener("touchstart", handleClickOrTouch);
+  
+    // Cleanup: Remove event listeners when the component unmounts
+    return () => {
+      button.removeEventListener("click", handleClickOrTouch);
+      button.removeEventListener("touchstart", handleClickOrTouch);
+    };
+  }, [onIntroClick]);
+  
 
   return (
     <>
