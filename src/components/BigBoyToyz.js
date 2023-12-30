@@ -255,7 +255,7 @@ const BigBoyToyz = () => {
             margin: "60px 0",
           }}
         >
-          <img src={gr3} className="proj-part-img1" alt="" />
+          <img src={gr3} className="proj-part-img-other" alt="" />
         </div>
       </div>
       <br />

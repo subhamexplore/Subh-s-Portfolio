@@ -53,7 +53,7 @@ const AboutUs = () => {
             <div className="childhood-sub2">
               <p className="childhood-head1">Empathy: Observer by</p>
               <p className="childhood-head2">Nature, Listener by Choice</p>
-              <div style={{ display: "flex"}}>
+              <div style={{ display: "flex"}} className='cp-jc'>
                 <p className="childhood-para">
                   In school, I observed quietly in corners and found joy in
                   listening to friends. These moments inspire my user-centric
@@ -68,7 +68,7 @@ const AboutUs = () => {
               <p className="childhood-head1">Zairza: Igniting Design</p>
               <p className="childhood-head2">Passion</p>
 
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex" }} className='cp-jc'>
                 <p className="childhood-para">
                   In Zairza, mentors embraced me. Here, I uncovered design's art
                   and science, realizing it's about crafting experiences.
@@ -94,7 +94,7 @@ const AboutUs = () => {
               <p className="childhood-head1">DXAI Hackathon:</p>
               <p className="childhood-head2">Special Jury Award at</p>
               <p className="childhood-head3">UXINDIA-23 Conference</p>
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex" }} className='cp-jc'>
                 <p className="childhood-para">
                   This conference exposed me to a world of diverse perspectives
                   from UX designers and entrepreneurs.
@@ -119,6 +119,32 @@ const AboutUs = () => {
         <br />
         <br />
         <br />
+      </div>
+      <div className="footer" style={{backgroundColor:"rgba(249, 249, 249, 1)"}}>
+      <div className="links" style={{paddingTop:'22px'}}>
+          <a style={{textDecoration:'none', color:'black'}} href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/" target="_blank"><p>Linkedin</p></a>
+          <div className="dot-foot"></div>
+          <a style={{textDecoration:'none', color:'black'}} href="https://www.behance.net/subhasmpradhan1" target="_blank"><p>Behance</p></a>
+          <div className="dot-foot"></div>
+          <a style={{textDecoration:'none', color:'black'}} href="https://www.instagram.com/subhs.design/" target="_blank"><p>Instagram</p></a>
+          <div className="dot-foot"></div>
+          <a
+            className="ht"
+            href="#tt-page"
+          >
+            Back to top
+          </a>
+        </div>
+        <p
+          style={{
+            textAlign: "center",
+            fontFamily: "gilroy",
+            fontWeight: "700",
+            color: "rgba(139, 139, 139, 1)",
+          }}
+        >
+          Copyrigh@2023 Subhs
+        </p>
       </div>
     </div>
   );

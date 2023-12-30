@@ -160,6 +160,32 @@ const Project = () => {
       <br />
       <br />
       <br />
+      <div className="footer" style={{backgroundColor:"rgba(249, 249, 249, 1)"}}>
+      <div className="links" style={{paddingTop:'22px'}}>
+          <a style={{textDecoration:'none', color:'black'}} href="https://www.linkedin.com/in/subhasmita-pradhan-675456158/" target="_blank"><p>Linkedin</p></a>
+          <div className="dot-foot"></div>
+          <a style={{textDecoration:'none', color:'black'}} href="https://www.behance.net/subhasmpradhan1" target="_blank"><p>Behance</p></a>
+          <div className="dot-foot"></div>
+          <a style={{textDecoration:'none', color:'black'}} href="https://www.instagram.com/subhs.design/" target="_blank"><p>Instagram</p></a>
+          <div className="dot-foot"></div>
+          <a
+            className="ht"
+            href="#tt-page"
+          >
+            Back to top
+          </a>
+        </div>
+        <p
+          style={{
+            textAlign: "center",
+            fontFamily: "gilroy",
+            fontWeight: "700",
+            color: "rgba(139, 139, 139, 1)",
+          }}
+        >
+          Copyrigh@2023 Subhs
+        </p>
+      </div>
     </div>
   );
 };

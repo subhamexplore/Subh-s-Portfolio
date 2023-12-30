@@ -26,7 +26,7 @@ function App() {
   };
   return (
     <div className="App">
-      {click ? (
+      {/* {click ? (
         <div className="App">
         <Navbar home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>
           <Routes>
@@ -40,9 +40,9 @@ function App() {
             <Route path="/packagingWorkshop" element={<PackagingWorkshop />} />
           </Routes>
     </div> 
-      ) : (
+      ) : ( */}
         <Intro onIntroClick={handleIntroClick} />
-      )}
+      {/* )} */}
     </div>
   );
 }

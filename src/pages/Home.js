@@ -512,6 +512,7 @@ const Home = ({home,sethome, project, setproject, about, setabout}) => {
             margin: "auto",
             color: "rgba(217, 217, 217, 0.5)",
             fontFamily: "gilroy",
+            fontSize: '26px'
           }}
         >
           My soul's calming haven! <img src={calm} height={40} alt="" />

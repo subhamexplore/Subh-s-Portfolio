@@ -41,7 +41,7 @@
   text-align: center;
   width: 700px;
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 26px;
   color: rgba(13, 5, 41, 1);
   font-weight: 600;
 }
@@ -127,6 +127,9 @@
   }
 }
 @media(max-width:800px){
+  .cp-jc{
+    justify-content: center;
+  }
   .childhood1{
     flex-direction: column;
     text-align: center;
