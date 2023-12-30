@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, Suspense } from "react";
 import "../Assets/styles/Home.scss";
 import Bounce from "../Assets/images/bounce.png";
 import LeftImg from "../Assets/images/landing_image.png";
@@ -27,10 +27,10 @@ import wave from "../Assets/images/wave.png";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import { gsap } from "gsap";
-// import bnl from "../Assets/images/bbl.gif";
 import Spline from "@splinetool/react-spline";
+import { Puff } from 'react-loader-spinner'
 
-const Home = ({home,sethome, project, setproject, about, setabout}) => {
+const Home = ({ home, sethome, project, setproject, about, setabout }) => {
   useEffect(() => {
     $(".butto--bubbl").each(function () {
       var $circlesTopLeft = $(this).parent().find(".circl.top-left");
@@ -154,6 +154,14 @@ const Home = ({home,sethome, project, setproject, about, setabout}) => {
   useEffect(() => {
     homeRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
+  const [isSplineLoaded, setIsSplineLoaded] = React.useState(false);
+  const onload = (spline) => {
+    console.log("Spline loaded!");
+    setTimeout(() => {
+      setIsSplineLoaded(true);
+    }, 1000);
+  };
+
   return (
     <>
       <section id="home-top" className="homii" ref={homeRef}>
@@ -162,11 +170,27 @@ const Home = ({home,sethome, project, setproject, about, setabout}) => {
             <img src={LeftImg} className="card-img-top img-left" alt="..." />
           </div>
           <div className="spline-div">
-            {/* "https://prod.spline.design/YBPmQ6pRBvfr-lug/scene.splinecode" */}
             <Spline
               scene="https://prod.spline.design/lYSB0PUts5pS6fKu/scene.splinecode"
               className="spline-char"
+              onLoad={onload}
             />
+            {isSplineLoaded ? null : (
+              <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+              <div>
+              <Puff
+              visible={true}
+                height="80"
+                width="80"
+                color="white"
+                ariaLabel="puff-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+              />
+              <p style={{color:'white', textAlign:'center', margin:'10px 0', fontSize:'18px'}}>Loading...</p>
+              </div>
+              </div>
+            )}
             <img src={Bounce} className="animation img-right" alt="" />
           </div>
         </div>
@@ -324,11 +348,15 @@ const Home = ({home,sethome, project, setproject, about, setabout}) => {
           </svg>
 
           <span className="butto--bubbl__containe">
-            <Link to={"/project"} onClick={() => {
-                    sethome(false);
-                    setproject(true);
-                    setabout(false);
-                  }} className="butto butto--bubbl">
+            <Link
+              to={"/project"}
+              onClick={() => {
+                sethome(false);
+                setproject(true);
+                setabout(false);
+              }}
+              className="butto butto--bubbl"
+            >
               EXPLORE ALL
             </Link>
             <span className="butto--bubbl__effect-containe">
@@ -512,7 +540,7 @@ const Home = ({home,sethome, project, setproject, about, setabout}) => {
             margin: "auto",
             color: "rgba(217, 217, 217, 0.5)",
             fontFamily: "gilroy",
-            fontSize: '26px'
+            fontSize: "26px",
           }}
         >
           My soul's calming haven! <img src={calm} height={40} alt="" />
@@ -568,11 +596,15 @@ const Home = ({home,sethome, project, setproject, about, setabout}) => {
                 </svg>
 
                 <span className="butto--bubbl__containe">
-                  <Link to={"/about"} onClick={() => {
-                    sethome(false);
-                    setproject(false);
-                    setabout(true);
-                  }} className="butto butto--bubbl">
+                  <Link
+                    to={"/about"}
+                    onClick={() => {
+                      sethome(false);
+                      setproject(false);
+                      setabout(true);
+                    }}
+                    className="butto butto--bubbl"
+                  >
                     READ IT NOW
                   </Link>
                   <span className="butto--bubbl__effect-containe">
