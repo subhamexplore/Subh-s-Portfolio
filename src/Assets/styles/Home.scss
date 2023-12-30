@@ -670,6 +670,11 @@
 //     font-size: 8px;
 //   }
 // }
+.splineLoad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 1408px) {
   .above-links-sub {
     width: 500px;
@@ -1131,6 +1136,9 @@
   .img-right {
     display: block;
     margin-top: 300px;
+  }
+  .splineLoad{
+    display: none;
   }
 }
 @media (max-width: 410px) {

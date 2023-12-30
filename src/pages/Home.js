@@ -176,7 +176,7 @@ const Home = ({ home, sethome, project, setproject, about, setabout }) => {
               onLoad={onload}
             />
             {isSplineLoaded ? null : (
-              <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+              <div className="splineLoad">
               <div>
               <Puff
               visible={true}
