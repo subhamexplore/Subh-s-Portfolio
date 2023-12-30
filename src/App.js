@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 // import "./App.scss";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
@@ -13,29 +13,20 @@ import SheafIcons from "./components/SheafIcons";
 import PackagingWorkshop from "./components/PackagingWorkshop";
 
 function App() {
-
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
   const [home, sethome] = useState(true);
   const [project, setproject] = useState(false);
   const [about, setabout] = useState(false);
-  // Explain
-  const [isfirstload, setisfirstload] = useState(true)
-  const [isvisible, setvisible] = useState(false)
-  useEffect(() => {
-      if (!isfirstload) {
-          window.location.reload();
-      } else {
-          setisfirstload(false)
-      }
-  }, [ isvisible ]);
 
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState((windowSize.current[0]<=430)?true:false);
 
   const handleIntroClick = () => {
     setClick(true);
   };
   return (
     <div className="App">
-      {click ? (
+      {
+        click ? (
         <div className="App">
         <Navbar home={home} sethome={sethome} project={project} setproject={setproject} about={about} setabout={setabout}/>
           <Routes>
