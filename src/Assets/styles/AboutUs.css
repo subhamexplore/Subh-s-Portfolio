@@ -9,10 +9,12 @@
   src: url(../font/gilroy/Gilroy-Regular.ttf);
 }
 .vector-back{
-    background-image: url('../images/line.png');
+    /* background-image: url('../images/line.png'); */
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../images/line.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom -190px right 100px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .about-head-div{
   display: flex;
