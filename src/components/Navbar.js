@@ -11,13 +11,16 @@ const Navbar = ({home,sethome, project, setproject, about, setabout}) => {
   // const [project, setproject] = useState(false);
   // const [about, setabout] = useState(false);
 
+  // const handleClick = () => {
+  //   const link = document.createElement("a");
+  //   link.download = "SubhasmitaPradhanResume";
+
+  //   link.href = resume;
+
+  //   link.click();
+  // };
   const handleClick = () => {
-    const link = document.createElement("a");
-    link.download = "SubhasmitaPradhanResume";
-
-    link.href = resume;
-
-    link.click();
+    window.open(resume, '_blank');
   };
 
   return (

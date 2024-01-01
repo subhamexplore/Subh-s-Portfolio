@@ -29,6 +29,7 @@ import $ from "jquery";
 import { gsap } from "gsap";
 import Spline from "@splinetool/react-spline";
 import { Puff } from 'react-loader-spinner'
+import hover from '../Assets/images/hover.png'
 
 const Home = ({ home, sethome, project, setproject, about, setabout }) => {
   useEffect(() => {
@@ -156,7 +157,6 @@ const Home = ({ home, sethome, project, setproject, about, setabout }) => {
   }, []);
   const [isSplineLoaded, setIsSplineLoaded] = React.useState(false);
   const onload = (spline) => {
-    console.log("Spline loaded!");
     setTimeout(() => {
       setIsSplineLoaded(true);
     }, 1000);
@@ -175,6 +175,7 @@ const Home = ({ home, sethome, project, setproject, about, setabout }) => {
               className="spline-char"
               onLoad={onload}
             />
+            <img src={hover} al0t="" className="hover-on-me" />
             {isSplineLoaded ? null : (
               <div className="splineLoad">
               <div>
