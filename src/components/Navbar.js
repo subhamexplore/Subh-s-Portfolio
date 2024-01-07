@@ -5,8 +5,9 @@ import LogoAlt from "../Assets/images/logoalt.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import resume from "./Subhasmita Pradhan.pdf";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = ({home,sethome, project, setproject, about, setabout}) => {
+const Navbar = ({ home, sethome, project, setproject, about, setabout }) => {
   // const [home, sethome] = useState(true);
   // const [project, setproject] = useState(false);
   // const [about, setabout] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = ({home,sethome, project, setproject, about, setabout}) => {
   //   link.click();
   // };
   const handleClick = () => {
-    window.open(resume, '_blank');
+    window.open(resume, "_blank");
   };
 
   return (
@@ -55,7 +56,9 @@ const Navbar = ({home,sethome, project, setproject, about, setabout}) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="" style={{color:'white', fontSize:'30px'}}>
+              <RxHamburgerMenu />
+            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
