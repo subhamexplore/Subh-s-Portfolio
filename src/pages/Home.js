@@ -667,8 +667,8 @@ const Home = ({ home, sethome, project, setproject, about, setabout }) => {
             color: "rgba(139, 139, 139, 1)",
           }}
         >
-          Copyrigh@2023 Subhs <span className="gara">|</span> Developed by
-          Subham Parida{" "}
+          Copyright@2023 Subhs <span className="gara">|</span> Developed by
+          <span><a className="mx-1" style={{textDecoration:'none', color:'rgb(139, 139, 139)'}} href="https://www.linkedin.com/in/subham-parida-48442a245/" target="_blank">Subham Parida</a></span>{" "}
         </p>
       </div>
     </>

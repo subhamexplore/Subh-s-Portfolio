@@ -508,7 +508,7 @@ const Ayushtha = () => {
             color: "rgba(139, 139, 139, 1)",
           }}
         >
-          Copyrigh@2023 Subhs
+          Copyright@2023 Subhs
         </p>
       </div>
     </div>

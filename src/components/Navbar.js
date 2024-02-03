@@ -56,7 +56,7 @@ const Navbar = ({ home, sethome, project, setproject, about, setabout }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="" style={{color:'white', fontSize:'30px'}}>
+            <span className="" style={{color:'grey', fontSize:'30px'}}>
               <RxHamburgerMenu />
             </span>
           </button>
